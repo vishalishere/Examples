@@ -1,0 +1,435 @@
+# Logfile created on 2015-06-03 15:55:24 -0500 by logger.rb/1.2.8
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/" at 2015-06-03 15:55:34 -0500[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 15:59:10 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:12:45 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:13:12 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:13:22 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:14:03 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 0.9ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:14:22 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.8ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:33:35 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:34:18 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:34:21 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:35:54 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:35:56 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:36:14 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:16 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:36:26 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:28 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.6ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:38 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:36:44 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:48 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.2ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:49 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:36:50 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 3.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:37:12 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:37:13 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:38:19 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 16:38:20 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 3.6ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:38:35 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.6ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:38:52 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.7ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:38:53 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:38:57 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 16:40:27 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 16:45:39 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 16:46:26 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 16:46:38 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:52:56 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.8ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:53:21 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 16:54:02 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.0ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:01:46 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:01:50 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.9ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:01:51 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.5ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:01:52 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.9ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:03:59 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:05:13 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 17:05:27 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:06:21 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:06:53 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:10:15 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 17:11:42 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 17:11:47 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 17:12:43 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:13:37 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 17:13:41 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 2.0ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:13:57 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 17:13:58 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:14:22 -0500
+[0;97;49mStarted GET "/app" at 2015-06-03 17:14:24 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:14:35 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:15:59 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:17:06 -0500
+* Reloaded "pages", "snippets" at 2015-06-03 17:17:09 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:23:49 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.4ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:29:12 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:33:40 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 171.3ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:34:15 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-03 17:37:01 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:37:09 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:37:16 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.0ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:19 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.5ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:40 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:42 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.0ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:42 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 0.9ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:42 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 0.9ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:40:49 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.7ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:41:00 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:41:12 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.0ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:42:36 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.5ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:42:44 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.3ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:46:51 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.1ms
+
+[0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-03 17:47:19 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.4ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-04 09:09:42 -0500
+[0;97;49mStarted GET "/" at 2015-06-04 09:09:51 -0500[0m
+Detecting locale EN
+Found page "LD Sample App" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.4ms
+
+[0m
+[0;97;49mStarted GET "/app" at 2015-06-04 09:09:55 -0500[0m
+Detecting locale EN
+Found page "App" [app]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.7ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-06-04 09:10:23 -0500
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
