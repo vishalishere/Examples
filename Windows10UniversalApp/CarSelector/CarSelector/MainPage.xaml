@@ -1,0 +1,123 @@
+﻿<Page
+    x:Class="CarSelector.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CarSelector"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="Main"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:ScenarioBindingConverter x:Key="ScenarioConverter"></local:ScenarioBindingConverter>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="wideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="641" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Splitter.DisplayMode" Value="Inline"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="narrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Splitter.DisplayMode" Value="Overlay"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <SplitView x:Name="Splitter" IsPaneOpen="True" Grid.Column="1">
+            <SplitView.Pane>
+                <RelativePanel Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+                    <StackPanel x:Name="HeaderPanel" Orientation="Horizontal">
+                        <TextBlock x:Name="Header" Text="Hunter Engineering" Style="{StaticResource TagLineTextStyle}" Margin="0,15,0,0" />
+                    </StackPanel>
+                    <TextBlock x:Name="SampleTitle" Text="Sample Title Here" Style="{StaticResource SampleHeaderTextStyle}" TextWrapping="Wrap" RelativePanel.Below="HeaderPanel" Margin="0,10,0,0"/>
+                    <ListBox x:Name="ScenarioControl" SelectionChanged="ScenarioControl_SelectionChanged"
+                 SelectionMode="Single" HorizontalAlignment="Left" Style="{StaticResource ScenarioListBoxStyle}"
+                 VerticalAlignment="Top" RelativePanel.Below="SampleTitle" Margin="0,10,0,0" RelativePanel.Above="FooterPanel">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={StaticResource ScenarioConverter}}" Style="{StaticResource ListItemTextStyle}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <StackPanel x:Name="FooterPanel" Orientation="Vertical" RelativePanel.AlignBottomWithPanel="True">
+                    </StackPanel>
+                </RelativePanel>
+            </SplitView.Pane>
+            <StackPanel>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Width="300">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="lMake" Style="{StaticResource BasicTextStyle}" Text=" Make" Grid.Row="0" Grid.Column="0" />
+                        <TextBlock x:Name="tMake" Style="{StaticResource BasicTextStyle}" Text=""  Grid.Row="0" Grid.Column="1" />
+                        <TextBlock x:Name="lModel" Style="{StaticResource BasicTextStyle}" Text=" Model " Grid.Row="1" Grid.Column="0" />
+                        <TextBlock x:Name="tModel" Style="{StaticResource BasicTextStyle}" Text="" Grid.Row="1" Grid.Column="1"/>
+                        <TextBlock x:Name="lYear" Style="{StaticResource BasicTextStyle}" Text=" Year" Grid.Row="2" Grid.Column="0" />
+                        <TextBlock x:Name="tYear" Style="{StaticResource BasicTextStyle}" Text="" Grid.Row="2" Grid.Column="1"/>
+                    </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Switch to Alphabetical view" />
+                            <ToggleButton Grid.Row="1" Grid.Column="0" Click="alphabetical_Checked" x:Name="alphabetical" Margin="83,22,0,-22" />
+                        </Grid>
+                    </Grid>
+                <Frame x:Name="ScenarioFrame" Margin="0,5,0,0" RelativePanel.AlignTopWithPanel="True"/>
+            </StackPanel>
+        </SplitView>
+        <Border Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+            <Grid VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ToggleButton Grid.Column="0" Grid.Row="0" Style="{StaticResource SymbolButton}" Click="ToggleButton_Click" VerticalAlignment="Top" Foreground="{ThemeResource ApplicationForegroundThemeBrush}">
+                    <ToggleButton.Content>
+                        <FontIcon x:Name="Back" FontFamily="Segoe MDL2 Assets" Glyph="&#xE760;" FontSize="50"/>
+                    </ToggleButton.Content>
+                </ToggleButton>
+                <ToggleButton Grid.Column="0" Grid.Row="1" Style="{StaticResource SymbolButton}" Click="Button_Click" VerticalAlignment="Top" Foreground="{ThemeResource ApplicationForegroundThemeBrush}">
+                    <ToggleButton.Content>
+                        <FontIcon x:Name="Hamburger" FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;" Margin="13,0,0,0"/>
+                    </ToggleButton.Content>
+                </ToggleButton>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

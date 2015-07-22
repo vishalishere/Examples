@@ -1,0 +1,24 @@
+EX (35 37)
+FX (35 37 45 50)
+G (20 25 35 37) Sedan
+G (35 37) Coupe
+G37 Convertible
+I (30 35)
+J30
+JX35
+M (30 35 37 45 56)
+M35h Hybrid
+Q40
+Q45
+Q50
+Q50 Hybrid
+Q60
+Q70
+Q70 Hybrid
+QX4
+QX50
+QX56
+QX60
+QX60 Hybrid
+QX70
+QX80

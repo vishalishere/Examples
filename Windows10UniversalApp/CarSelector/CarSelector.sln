@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSelector", "CarSelector\CarSelector.csproj", "{B2C0D306-DC02-478B-89A4-1B3A5CE89838}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|ARM.Build.0 = Debug|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x64.ActiveCfg = Debug|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x64.Build.0 = Debug|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x64.Deploy.0 = Debug|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x86.ActiveCfg = Debug|x86
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x86.Build.0 = Debug|x86
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Debug|x86.Deploy.0 = Debug|x86
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|ARM.ActiveCfg = Release|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|ARM.Build.0 = Release|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|ARM.Deploy.0 = Release|ARM
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x64.ActiveCfg = Release|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x64.Build.0 = Release|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x64.Deploy.0 = Release|x64
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x86.ActiveCfg = Release|x86
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x86.Build.0 = Release|x86
+		{B2C0D306-DC02-478B-89A4-1B3A5CE89838}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://eng-tfsat:8080/tfs/hec
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CarSelector\\CarSelector.csproj
+		SccProjectName1 = CarSelector
+		SccLocalPath1 = CarSelector
+	EndGlobalSection
+EndGlobal

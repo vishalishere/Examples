@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="CarSelector.Scenario2_Alphabetical"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <CollectionViewSource x:ConnectionId='1' x:Name="ModelsCollectionViewSource" IsSourceGrouped="True"/>
+    </Page.Resources>
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left" Text="Please Enter the Model of the Vehicle:"/>
+        <Grid Height="600" Width="600">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Grid.Row="0">
+                <GridView x:ConnectionId='2'
+        ItemsSource="{Binding Source={StaticResource ModelsCollectionViewSource}}"
+        x:Name="ModelGridView"
+        SelectionMode="None"
+        IsSwipeEnabled="false"
+        IsItemClickEnabled="True"
+                                           
+                                                         >
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Bottom" Background="{ThemeResource ListViewItemOverlayBackgroundThemeBrush}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Path=ModelName}" Style="{StaticResource TitleTextBlockStyle}" Height="30" Margin="15,0,200,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+
+                    <GridView.GroupStyle>
+                        <GroupStyle>
+                            <GroupStyle.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text='{Binding Key}' Foreground="Gray" Margin="5" FontSize="30" FontFamily="Segoe UI Light" />
+                                </DataTemplate>
+                            </GroupStyle.HeaderTemplate>
+                            <GroupStyle.Panel>
+                                <ItemsPanelTemplate>
+                                    <VariableSizedWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </GroupStyle.Panel>
+                        </GroupStyle>
+                    </GridView.GroupStyle>
+
+
+                    <GridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <ItemsWrapGrid GroupPadding="0,0,5,0" />
+                        </ItemsPanelTemplate>
+                    </GridView.ItemsPanel>
+                </GridView>
+            </ScrollViewer>
+        </Grid>
+    </StackPanel>
+</Page>
+
+

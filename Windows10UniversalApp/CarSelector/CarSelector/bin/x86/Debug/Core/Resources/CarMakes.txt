@@ -1,0 +1,138 @@
+Acura
+Alfa Romeo
+American Motors
+Aston Martin
+Audi
+Bentley
+BMW
+BMW i
+Bricklin
+Buick
+Cadillac
+Chevrolet
+Chrysler
+Daewoo
+Daihatsu
+DeLorean
+DeSoto
+DeTomaso
+Dodge   Ram   SRT
+Eagle
+Edsel
+Ferrari
+Fiat
+Fisker
+Ford
+Geo
+GMC
+Honda
+Hummer
+Hyundai
+Infiniti
+International
+Isuzu
+Jaguar
+Jeep
+Kia
+Lada
+Laforza
+Lamborghini
+Land Rover
+Lexus
+Lincoln
+Lotus
+LTI
+MG
+Maserati
+Maybach
+Mazda
+McLaren
+Mercedes-Benz
+Mercury
+Merkur
+MINI
+Mitsubishi
+Mobility Ventures   VPG
+Nissan
+Noble
+Oldsmobile
+Opel
+Packard
+Panoz
+Peugeot
+Plymouth
+Pontiac
+Porsche
+Renault
+Rolls Royce
+Rossion
+Saab
+Saturn
+Scion
+Smart
+Sterling
+Studebaker Avanti
+Subaru
+Sunbeam
+Suzuki
+Tesla
+Toyota
+Triumph
+Volkswagen
+Volvo
+Yugo
+Demo Vehicles
+Motorhome chas.
+AM General
+American LaFrance
+Bering
+BIA
+Blue Bird
+CAT (CT660,CT681)
+Champion Bus
+Chance Coach
+Dina
+Dodge
+Eagle Bus
+Flxible Vehicles
+Freightliner
+Freightliner Custom Chassis Corp
+Gillig Corporation
+GM Classic Bus
+HINO
+HME
+Hyundai Truck USA
+Irisbus
+Iveco
+Kenworth
+Mack Midliner Models
+Mack w Non-Driving Front Axles 1994-
+Mack w Non-Driving Front Axles -1993
+Mack w Front Driving Axles
+Mack w Two Front Axles
+Marmon Motor Co.
+MCI
+Mercedes
+Mitsubishi Fuso
+Neoplan USA Corp.
+New Flyer Buses
+North American Bus Industries
+North American Coach
+Nova Bus
+Orion Bus Industries
+Peterbilt
+Pierce Manufacturing
+Prevost
+Scania
+Setra
+Spartan Chassis
+Thomas Built Buses
+TMC
+UD Trucks
+UMC Aeromate
+Unimog
+Van Hool Coaches
+Volvo   VolvoGM   White[
+Western Star
+Workhorse Custom Chassis
+User Spec Standard Values

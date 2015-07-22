@@ -1,0 +1,7 @@
+D500 Medium Duty -1981
+D600 Medium Duty -1981
+D700 Medium Duty -1981
+D800 Medium Duty -1981
+S600 Medium Duty -1981
+S700 Medium Duty -1981
+W600 Medium Duty -1981

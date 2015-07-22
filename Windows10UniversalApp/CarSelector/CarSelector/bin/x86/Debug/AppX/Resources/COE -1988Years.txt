@@ -1,0 +1,14 @@
+w ps
+w ps
+w ms
+w ms
+w ps
+w ps
+w ms
+w ms
+w ps
+w ps
+w ms
+w ms
+bt
+rt

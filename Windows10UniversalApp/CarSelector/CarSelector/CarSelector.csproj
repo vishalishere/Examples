@@ -1,0 +1,1891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B2C0D306-DC02-478B-89A4-1B3A5CE89838}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarSelector</RootNamespace>
+    <AssemblyName>CarSelector</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10069.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>CarSelector_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="GroupInfoList.cs" />
+    <Compile Include="ListViewItem.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Make.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenario.cs" />
+    <Compile Include="Scenario1_Make_Alphabetical.xaml.cs">
+      <DependentUpon>Scenario1_Make_Alphabetical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario2_Model_Alphabetical.xaml.cs">
+      <DependentUpon>Scenario2_Model_Alphabetical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3_Year_Alphabetical.xaml.cs">
+      <DependentUpon>Scenario3_Year_Alphabetical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4_Selection.xaml.cs">
+      <DependentUpon>Scenario4_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3_Year.xaml.cs">
+      <DependentUpon>Scenario3_Year.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario2_Model.xaml.cs">
+      <DependentUpon>Scenario2_Model.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario1_Make.xaml.cs">
+      <DependentUpon>Scenario1_Make.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Year.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="CarSelector_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="Resources\%27LD%27 ser.Years.txt" />
+    <Content Include="Resources\%27MD%27 ser.Years.txt" />
+    <Content Include="Resources\%27Years.txt" />
+    <Content Include="Resources\%28T%291000Years.txt" />
+    <Content Include="Resources\%28ZF%29 Lowered FloorYears.txt" />
+    <Content Include="Resources\-1994Years.txt" />
+    <Content Include="Resources\-1995Years.txt" />
+    <Content Include="Resources\-2001Years.txt" />
+    <Content Include="Resources\-8 31 92Years.txt" />
+    <Content Include="Resources\1 Series - E81 %282007 - 2012%29Years.txt" />
+    <Content Include="Resources\1 Series - E82 %282008 - 2013%29Years.txt" />
+    <Content Include="Resources\1 Series - E87 %282004 - 2011%29Years.txt" />
+    <Content Include="Resources\1 Series - E88 %282008 - 2013%29Years.txt" />
+    <Content Include="Resources\1 Series - F20 %282011 -     %29Years.txt" />
+    <Content Include="Resources\1 Series - F21 %282012 -     %29Years.txt" />
+    <Content Include="Resources\100 200 Quattro, S4 %281989-94%29Years.txt" />
+    <Content Include="Resources\100 200Years.txt" />
+    <Content Include="Resources\102A3 102B3 102C3 102D3 102DL3 102EL3Years.txt" />
+    <Content Include="Resources\107 %28SL Class 1972-89%29Years.txt" />
+    <Content Include="Resources\108 109 %28S Class 1965-72%29Years.txt" />
+    <Content Include="Resources\110 %28Fintail 1961-68%29Years.txt" />
+    <Content Include="Resources\111 112 %28Fintail 1959-68%29Years.txt" />
+    <Content Include="Resources\113 %28SL Class 1963-71%29Years.txt" />
+    <Content Include="Resources\114 115 %28 8 1967-76%29Years.txt" />
+    <Content Include="Resources\116 %28S Class 1972-80%29Years.txt" />
+    <Content Include="Resources\117 %28CLA Class 2014-  %29Years.txt" />
+    <Content Include="Resources\120 Conventional -1989Years.txt" />
+    <Content Include="Resources\121 %28SL Class 1955-63%29Years.txt" />
+    <Content Include="Resources\122 ser.Years.txt" />
+    <Content Include="Resources\123 %28E Class 1977-85%29Years.txt" />
+    <Content Include="Resources\124 %28E Class 1986-95%29Years.txt" />
+    <Content Include="Resources\124 SpiderYears.txt" />
+    <Content Include="Resources\126 %28S Class 1981-91%29Years.txt" />
+    <Content Include="Resources\128SLYears.txt" />
+    <Content Include="Resources\128Years.txt" />
+    <Content Include="Resources\129 %28SL Class 1990-2002%29Years.txt" />
+    <Content Include="Resources\131 BravaYears.txt" />
+    <Content Include="Resources\140 %28S CL Class 1992-99%29Years.txt" />
+    <Content Include="Resources\140 ser.Years.txt" />
+    <Content Include="Resources\150 210 ser.Years.txt" />
+    <Content Include="Resources\156 %28GLA Class 2015-  %29Years.txt" />
+    <Content Include="Resources\163 %28M Class 1998-2005%29Years.txt" />
+    <Content Include="Resources\164 %28M Class 2006-11   GL Class 2006-12%29Years.txt" />
+    <Content Include="Resources\164 ser.Years.txt" />
+    <Content Include="Resources\164Years.txt" />
+    <Content Include="Resources\166 %28M GLE Class 2012-    GL GLS Class 2013-  %29Years.txt" />
+    <Content Include="Resources\168 %28A Class 1998-2004%29Years.txt" />
+    <Content Include="Resources\169 %28A Class 2004-12%29Years.txt" />
+    <Content Include="Resources\170 %28SLK Roadster 1998-2004%29Years.txt" />
+    <Content Include="Resources\171 %28SLK Roadster 2005-11%29Years.txt" />
+    <Content Include="Resources\172 %28SLK SLC Roadster 2012- %29Years.txt" />
+    <Content Include="Resources\176 %28A Class 2012-  %29Years.txt" />
+    <Content Include="Resources\1800 ser.Years.txt" />
+    <Content Include="Resources\1871 - 4X4Years.txt" />
+    <Content Include="Resources\1871 - All Models exc Tilt Cab, 4X4Years.txt" />
+    <Content Include="Resources\1871 - Tilt CabYears.txt" />
+    <Content Include="Resources\188 %28300 Class 1952-58%29Years.txt" />
+    <Content Include="Resources\18iYears.txt" />
+    <Content Include="Resources\190 %28AMG GT-S 2016- %29Years.txt" />
+    <Content Include="Resources\1900 MantaYears.txt" />
+    <Content Include="Resources\1959-76 Austin Morris BMC Years.txt" />
+    <Content Include="Resources\1959-91 FX4   FX4R   FX4S   FairwayYears.txt" />
+    <Content Include="Resources\197 %28SLS-Coupe Roadster 2011-  %29Years.txt" />
+    <Content Include="Resources\198 %28SL Class 1954-63%29Years.txt" />
+    <Content Include="Resources\1986-92 %28All Models%29Years.txt" />
+    <Content Include="Resources\1987-88 %28825S 825SL%29Years.txt" />
+    <Content Include="Resources\1989-90Years.txt" />
+    <Content Include="Resources\1989-91 %28827S 827Si 827SL 827SLi%29Years.txt" />
+    <Content Include="Resources\199 %28SLR McLaren 2005-09%29Years.txt" />
+    <Content Include="Resources\1992-2006 Fairway Driver %28incl. Plus 95%29   TX1   TXIIYears.txt" />
+    <Content Include="Resources\1995-Years.txt" />
+    <Content Include="Resources\2 Axle BusYears.txt" />
+    <Content Include="Resources\2 Series - F22 %282014 -     %29Years.txt" />
+    <Content Include="Resources\2 Series - F23 %282015 -     %29Years.txt" />
+    <Content Include="Resources\2 Series Active Tourer - F45 %282014 -     %29Years.txt" />
+    <Content Include="Resources\2 Series Gran Tourer - F46 %282015 -     %29Years.txt" />
+    <Content Include="Resources\200 250 300Years.txt" />
+    <Content Include="Resources\2000 GTXYears.txt" />
+    <Content Include="Resources\2002-2004Years.txt" />
+    <Content Include="Resources\2005Years.txt" />
+    <Content Include="Resources\2006-07Years.txt" />
+    <Content Include="Resources\2008-10Years.txt" />
+    <Content Include="Resources\200SXYears.txt" />
+    <Content Include="Resources\200Years.txt" />
+    <Content Include="Resources\201 %28190 Class 1984-93%29Years.txt" />
+    <Content Include="Resources\2011-15Years.txt" />
+    <Content Include="Resources\202 %28C Class 1994-2000%29Years.txt" />
+    <Content Include="Resources\203 %28C Class 2001-07%29Years.txt" />
+    <Content Include="Resources\203 %28CLC 2008-10%29Years.txt" />
+    <Content Include="Resources\204 %28C Class 2008-15%29Years.txt" />
+    <Content Include="Resources\204 %28GLK GLC Class 2010- %29Years.txt" />
+    <Content Include="Resources\205 %28C Class 2015- %29Years.txt" />
+    <Content Include="Resources\207 %28E Class Coupe Cabrio 2010- %29Years.txt" />
+    <Content Include="Resources\208 %28CLK 1998-2002 Coupe, 1999-2003 Conv%29Years.txt" />
+    <Content Include="Resources\208Years.txt" />
+    <Content Include="Resources\209 %28CLK 2003-09 Coupe, 2004-09 Conv%29Years.txt" />
+    <Content Include="Resources\210 %28E Class 1996-2002 Sedan, 1998-2003 Wagon%29Years.txt" />
+    <Content Include="Resources\211 %28E Class 2003-09 Sedan, 2004-09 Wagon%29Years.txt" />
+    <Content Include="Resources\212 %28E Class 2010-  %29Years.txt" />
+    <Content Include="Resources\215 %28CL Class 2000-06%29Years.txt" />
+    <Content Include="Resources\216 %28CL Class 2007-14%29Years.txt" />
+    <Content Include="Resources\217 %28S Class Coupe Cabriolet 2015- %29Years.txt" />
+    <Content Include="Resources\218 %28CLS Class 2012- %29Years.txt" />
+    <Content Include="Resources\219 %28CLS Class 2006-11%29Years.txt" />
+    <Content Include="Resources\220 %28S Class 2000-06%29Years.txt" />
+    <Content Include="Resources\221 %28S Class 2007-13%29Years.txt" />
+    <Content Include="Resources\222 %28S Class 2014-  %29Years.txt" />
+    <Content Include="Resources\230 %28SL Class 2003-12%29Years.txt" />
+    <Content Include="Resources\231 %28SL Class 2013- %29Years.txt" />
+    <Content Include="Resources\240 260 ser.Years.txt" />
+    <Content Include="Resources\240SXYears.txt" />
+    <Content Include="Resources\242 %28B Class 2014- %29Years.txt" />
+    <Content Include="Resources\245 %28B Class %28CST%29 2006-12%29Years.txt" />
+    <Content Include="Resources\246 %28B Class 2013-  %29Years.txt" />
+    <Content Include="Resources\250Years.txt" />
+    <Content Include="Resources\251 %28R Class %28GST%29 2006-13%29Years.txt" />
+    <Content Include="Resources\275Years.txt" />
+    <Content Include="Resources\3 Axle BusYears.txt" />
+    <Content Include="Resources\3 Series - E21 %281977 - 9 83%29Years.txt" />
+    <Content Include="Resources\3 Series - E30 %281984 - 1993%29Years.txt" />
+    <Content Include="Resources\3 Series - E36 %281992 - 1999%29Years.txt" />
+    <Content Include="Resources\3 Series - E46 %281999 - 2006%29Years.txt" />
+    <Content Include="Resources\3 Series - E90 E91 %282006 - 2012%29Years.txt" />
+    <Content Include="Resources\3 Series - E92 %282007 - 2013%29Years.txt" />
+    <Content Include="Resources\3 Series - E93 %282007 - 2013%29Years.txt" />
+    <Content Include="Resources\3 Series - F30 %282012 -     %29Years.txt" />
+    <Content Include="Resources\3 Series - F31 %282014 -     %29Years.txt" />
+    <Content Include="Resources\3 Series - F35 LWB China %282012 -     %29Years.txt" />
+    <Content Include="Resources\3 Series Gran Turismo - F34 %282014 -     %29Years.txt" />
+    <Content Include="Resources\3 Series M3 - F80 %282015 -     %29Years.txt" />
+    <Content Include="Resources\30,40,45 foot CoachesYears.txt" />
+    <Content Include="Resources\300 ser.Years.txt" />
+    <Content Include="Resources\3000GTYears.txt" />
+    <Content Include="Resources\300ZXYears.txt" />
+    <Content Include="Resources\304Years.txt" />
+    <Content Include="Resources\308Years.txt" />
+    <Content Include="Resources\309   310   313Years.txt" />
+    <Content Include="Resources\323Years.txt" />
+    <Content Include="Resources\328Years.txt" />
+    <Content Include="Resources\330 440 880Years.txt" />
+    <Content Include="Resources\330Years.txt" />
+    <Content Include="Resources\348Years.txt" />
+    <Content Include="Resources\350ZYears.txt" />
+    <Content Include="Resources\355Years.txt" />
+    <Content Include="Resources\360Years.txt" />
+    <Content Include="Resources\365Years.txt" />
+    <Content Include="Resources\370ZYears.txt" />
+    <Content Include="Resources\4 Series - F32 %282014 -     %29Years.txt" />
+    <Content Include="Resources\4 Series - F33 %282014 -     %29Years.txt" />
+    <Content Include="Resources\4 Series Gran Coupe - F36 %282015 -     %29Years.txt" />
+    <Content Include="Resources\4 Series M4 - F82 F83 %282015 -     %29Years.txt" />
+    <Content Include="Resources\400 GT AUTYears.txt" />
+    <Content Include="Resources\4000 QuattroYears.txt" />
+    <Content Include="Resources\4000Years.txt" />
+    <Content Include="Resources\400Years.txt" />
+    <Content Include="Resources\404Years.txt" />
+    <Content Include="Resources\405Years.txt" />
+    <Content Include="Resources\414 Vaneo %282001-05%29Years.txt" />
+    <Content Include="Resources\415 %28CITAN 2012-  %29Years.txt" />
+    <Content Include="Resources\442Years.txt" />
+    <Content Include="Resources\447 %28Metris 2016- %29Years.txt" />
+    <Content Include="Resources\450 %28Fortwo 2005-07%29Years.txt" />
+    <Content Include="Resources\451 %28Fortwo 2008-15%29Years.txt" />
+    <Content Include="Resources\453 %28Fortwo 2016-  %29Years.txt" />
+    <Content Include="Resources\456%28M%29 GTA GTYears.txt" />
+    <Content Include="Resources\458 Italia %28Coupe Spider%29Years.txt" />
+    <Content Include="Resources\458 SpecialeYears.txt" />
+    <Content Include="Resources\460   461   463 %28G Class 1979- %29Years.txt" />
+    <Content Include="Resources\4CYears.txt" />
+    <Content Include="Resources\4RunnerYears.txt" />
+    <Content Include="Resources\5 Series - E12 %281975 - 9 81%29Years.txt" />
+    <Content Include="Resources\5 Series - E28 %281982 - 1988%29Years.txt" />
+    <Content Include="Resources\5 Series - E34 %281989 - 1995%29Years.txt" />
+    <Content Include="Resources\5 Series - E39 %281997 - 2003%29Years.txt" />
+    <Content Include="Resources\5 Series - E60 %282004 - 2010%29Years.txt" />
+    <Content Include="Resources\5 Series - E61 %282006 - 2010%29Years.txt" />
+    <Content Include="Resources\5 Series - F10 %282011 -     %29Years.txt" />
+    <Content Include="Resources\5 Series - F11 %282010 -     %29Years.txt" />
+    <Content Include="Resources\5 Series - F18 LWB China %282010 -     %29Years.txt" />
+    <Content Include="Resources\5 Series Gran Turismo - F07 %282010 -     %29Years.txt" />
+    <Content Include="Resources\5000 QuattroYears.txt" />
+    <Content Include="Resources\5000Years.txt" />
+    <Content Include="Resources\500e %28BEV%29Years.txt" />
+    <Content Include="Resources\500LYears.txt" />
+    <Content Include="Resources\500XYears.txt" />
+    <Content Include="Resources\500Years.txt" />
+    <Content Include="Resources\504Years.txt" />
+    <Content Include="Resources\505Years.txt" />
+    <Content Include="Resources\512Years.txt" />
+    <Content Include="Resources\550   575 Maranello %28incl. Superamerica%29Years.txt" />
+    <Content Include="Resources\57 3390mm wb %28240%29Years.txt" />
+    <Content Include="Resources\599 GTB FioranoYears.txt" />
+    <Content Include="Resources\599 GTOYears.txt" />
+    <Content Include="Resources\6 Series - E24 %281980 - 1989%29Years.txt" />
+    <Content Include="Resources\6 Series - E63 E64 %282004 - 2010%29Years.txt" />
+    <Content Include="Resources\6 Series - F12 %282012 -     %29Years.txt" />
+    <Content Include="Resources\6 Series - F13 %282012 -     %29Years.txt" />
+    <Content Include="Resources\6 Series Gran Coupe - F06 %282013 -     %29Years.txt" />
+    <Content Include="Resources\6000Years.txt" />
+    <Content Include="Resources\600Years.txt" />
+    <Content Include="Resources\601   602   611 - T1 %281977-96%29Years.txt" />
+    <Content Include="Resources\604Years.txt" />
+    <Content Include="Resources\612 Scaglietti   SessantaYears.txt" />
+    <Content Include="Resources\616Years.txt" />
+    <Content Include="Resources\618Years.txt" />
+    <Content Include="Resources\62 3827mm wb %28240%29Years.txt" />
+    <Content Include="Resources\626Years.txt" />
+    <Content Include="Resources\631.33   631.34 MB100 2450 2675mm wb %281987-96%29Years.txt" />
+    <Content Include="Resources\636 %28Vito   Viano%29 ChinaYears.txt" />
+    <Content Include="Resources\638 %28V Class Vito 1995-2003%29Years.txt" />
+    <Content Include="Resources\639 %28Vito   Viano 2004- %29Years.txt" />
+    <Content Include="Resources\650SYears.txt" />
+    <Content Include="Resources\7 Series - E23 %281980 - 1987%29Years.txt" />
+    <Content Include="Resources\7 Series - E32 %281988 - 1994%29Years.txt" />
+    <Content Include="Resources\7 Series - E38 %281995 - 2001%29Years.txt" />
+    <Content Include="Resources\7 Series - E65 E66 E67 E68 %282002 - 2008%29Years.txt" />
+    <Content Include="Resources\7 Series - F01 F02 F03 F04 %282009 - 2015%29Years.txt" />
+    <Content Include="Resources\7 Series - G11 G12 %282016 -     %29Years.txt" />
+    <Content Include="Resources\700 ser.Years.txt" />
+    <Content Include="Resources\8 95- %28Spicer axle%29Years.txt" />
+    <Content Include="Resources\8 Series - E31 %281991 - 1997%29Years.txt" />
+    <Content Include="Resources\80 90 QuattroYears.txt" />
+    <Content Include="Resources\80 90Years.txt" />
+    <Content Include="Resources\808Years.txt" />
+    <Content Include="Resources\818Years.txt" />
+    <Content Include="Resources\850Years.txt" />
+    <Content Include="Resources\8C CompetizioneYears.txt" />
+    <Content Include="Resources\9 1 92-7 95 %28Rockwell axle%29Years.txt" />
+    <Content Include="Resources\9-2XYears.txt" />
+    <Content Include="Resources\9-3Years.txt" />
+    <Content Include="Resources\9-4xYears.txt" />
+    <Content Include="Resources\9-5Years.txt" />
+    <Content Include="Resources\9-7XYears.txt" />
+    <Content Include="Resources\900 ser.Years.txt" />
+    <Content Include="Resources\9000Years.txt" />
+    <Content Include="Resources\900Years.txt" />
+    <Content Include="Resources\901   902   903   904-T1N   Sprinter %281995-2006%29Years.txt" />
+    <Content Include="Resources\906 NCV3 Sprinter %282006- %29Years.txt" />
+    <Content Include="Resources\911 TurboYears.txt" />
+    <Content Include="Resources\911Years.txt" />
+    <Content Include="Resources\912Years.txt" />
+    <Content Include="Resources\914Years.txt" />
+    <Content Include="Resources\918 SpyderYears.txt" />
+    <Content Include="Resources\924Years.txt" />
+    <Content Include="Resources\928Years.txt" />
+    <Content Include="Resources\929Years.txt" />
+    <Content Include="Resources\944Years.txt" />
+    <Content Include="Resources\959Years.txt" />
+    <Content Include="Resources\968Years.txt" />
+    <Content Include="Resources\99Years.txt" />
+    <Content Include="Resources\A L Line TractorYears.txt" />
+    <Content Include="Resources\A L Line TruckYears.txt" />
+    <Content Include="Resources\A100 A108 Pickup Van %281964-70%29Years.txt" />
+    <Content Include="Resources\A3 S3 QuattroYears.txt" />
+    <Content Include="Resources\A3Years.txt" />
+    <Content Include="Resources\A4 S4 RS 4 QuattroYears.txt" />
+    <Content Include="Resources\A4Years.txt" />
+    <Content Include="Resources\A5 S5 RS 5 QuattroYears.txt" />
+    <Content Include="Resources\A5Years.txt" />
+    <Content Include="Resources\A6 S6 RS 6 QuattroYears.txt" />
+    <Content Include="Resources\A6Years.txt" />
+    <Content Include="Resources\A7 S7 RS 7 QuattroYears.txt" />
+    <Content Include="Resources\A8 S8Years.txt" />
+    <Content Include="Resources\AcadianYears.txt" />
+    <Content Include="Resources\AcadiaYears.txt" />
+    <Content Include="Resources\AccentYears.txt" />
+    <Content Include="Resources\AcclaimYears.txt" />
+    <Content Include="Resources\Accord HybridYears.txt" />
+    <Content Include="Resources\AccordYears.txt" />
+    <Content Include="Resources\AchievaYears.txt" />
+    <Content Include="Resources\ActivaYears.txt" />
+    <Content Include="Resources\AcuraModels.txt" />
+    <Content Include="Resources\AdventurerYears.txt" />
+    <Content Include="Resources\AerioYears.txt" />
+    <Content Include="Resources\AeromaxYears.txt" />
+    <Content Include="Resources\AerostarYears.txt" />
+    <Content Include="Resources\Agora 12m LINE w E70XH axleYears.txt" />
+    <Content Include="Resources\Agora 18m w E70XH axleYears.txt" />
+    <Content Include="Resources\AleroYears.txt" />
+    <Content Include="Resources\Alfa RomeoModels.txt" />
+    <Content Include="Resources\AlfettaYears.txt" />
+    <Content Include="Resources\All 1976 and Earlier ModelsYears.txt" />
+    <Content Include="Resources\All Models -1989Years.txt" />
+    <Content Include="Resources\All Models exc Opus Low-Floor BusYears.txt" />
+    <Content Include="Resources\All ModelsYears.txt" />
+    <Content Include="Resources\All Other ModelsYears.txt" />
+    <Content Include="Resources\All w Westport Front AxleYears.txt" />
+    <Content Include="Resources\Allant�Years.txt" />
+    <Content Include="Resources\AllianceYears.txt" />
+    <Content Include="Resources\allroad QuattroYears.txt" />
+    <Content Include="Resources\Altima HybridYears.txt" />
+    <Content Include="Resources\AltimaYears.txt" />
+    <Content Include="Resources\AM GeneralModels.txt" />
+    <Content Include="Resources\AM55Years.txt" />
+    <Content Include="Resources\AM56Years.txt" />
+    <Content Include="Resources\AM60Years.txt" />
+    <Content Include="Resources\AM61Years.txt" />
+    <Content Include="Resources\AM70Years.txt" />
+    <Content Include="Resources\AmantiYears.txt" />
+    <Content Include="Resources\AmbassadorYears.txt" />
+    <Content Include="Resources\American LaFranceModels.txt" />
+    <Content Include="Resources\American MotorsModels.txt" />
+    <Content Include="Resources\AmericanYears.txt" />
+    <Content Include="Resources\AmigoYears.txt" />
+    <Content Include="Resources\AMXYears.txt" />
+    <Content Include="Resources\ApolloYears.txt" />
+    <Content Include="Resources\Argosy COEYears.txt" />
+    <Content Include="Resources\AriesYears.txt" />
+    <Content Include="Resources\Armada %28incl. Pathfinder Armada%29Years.txt" />
+    <Content Include="Resources\ArnageYears.txt" />
+    <Content Include="Resources\Arrow PkupYears.txt" />
+    <Content Include="Resources\ArrowYears.txt" />
+    <Content Include="Resources\AscenderYears.txt" />
+    <Content Include="Resources\AspenYears.txt" />
+    <Content Include="Resources\AspireYears.txt" />
+    <Content Include="Resources\Aston MartinModels.txt" />
+    <Content Include="Resources\ASTRAYears.txt" />
+    <Content Include="Resources\AstreYears.txt" />
+    <Content Include="Resources\Astro VanYears.txt" />
+    <Content Include="Resources\Asuna SunfireYears.txt" />
+    <Content Include="Resources\ATS-VYears.txt" />
+    <Content Include="Resources\ATSYears.txt" />
+    <Content Include="Resources\AudiModels.txt" />
+    <Content Include="Resources\AURAYears.txt" />
+    <Content Include="Resources\AuroraYears.txt" />
+    <Content Include="Resources\AvalancheYears.txt" />
+    <Content Include="Resources\Avalon HybridYears.txt" />
+    <Content Include="Resources\AvalonYears.txt" />
+    <Content Include="Resources\AvantiYears.txt" />
+    <Content Include="Resources\AvanzaYears.txt" />
+    <Content Include="Resources\AvengerYears.txt" />
+    <Content Include="Resources\AventadorYears.txt" />
+    <Content Include="Resources\AveoYears.txt" />
+    <Content Include="Resources\AviatorYears.txt" />
+    <Content Include="Resources\AxiomYears.txt" />
+    <Content Include="Resources\AxxessYears.txt" />
+    <Content Include="Resources\AzeraYears.txt" />
+    <Content Include="Resources\AztekYears.txt" />
+    <Content Include="Resources\AzureYears.txt" />
+    <Content Include="Resources\B &amp; F ser. %28 -1999 F600-900 F6000-9000%29Years.txt" />
+    <Content Include="Resources\B ser. Pkup TruckYears.txt" />
+    <Content Include="Resources\B ser. Van Ram Van 1500-3500 %281971-2003%29Years.txt" />
+    <Content Include="Resources\B ser.Years.txt" />
+    <Content Include="Resources\BajaYears.txt" />
+    <Content Include="Resources\BarracudaYears.txt" />
+    <Content Include="Resources\BeaumontYears.txt" />
+    <Content Include="Resources\Beetle %28incl. Type 1 Super Beetle%29Years.txt" />
+    <Content Include="Resources\Bel AirYears.txt" />
+    <Content Include="Resources\BelvedereYears.txt" />
+    <Content Include="Resources\BentleyModels.txt" />
+    <Content Include="Resources\BerettaYears.txt" />
+    <Content Include="Resources\BeringModels.txt" />
+    <Content Include="Resources\BermudaYears.txt" />
+    <Content Include="Resources\BIAModels.txt" />
+    <Content Include="Resources\BiscayneYears.txt" />
+    <Content Include="Resources\BlackwoodYears.txt" />
+    <Content Include="Resources\Blazer %28Full Size%29Years.txt" />
+    <Content Include="Resources\Blazer %28S T ser.%29Years.txt" />
+    <Content Include="Resources\Blue BirdModels.txt" />
+    <Content Include="Resources\Blue BirdYears.txt" />
+    <Content Include="Resources\BMW iModels.txt" />
+    <Content Include="Resources\BMWModels.txt" />
+    <Content Include="Resources\BobcatYears.txt" />
+    <Content Include="Resources\BonnevilleYears.txt" />
+    <Content Include="Resources\BorregoYears.txt" />
+    <Content Include="Resources\BoxsterYears.txt" />
+    <Content Include="Resources\BRATYears.txt" />
+    <Content Include="Resources\BravadaYears.txt" />
+    <Content Include="Resources\BreezeYears.txt" />
+    <Content Include="Resources\BricklinModels.txt" />
+    <Content Include="Resources\Bronco 4X4Years.txt" />
+    <Content Include="Resources\Bronco IIYears.txt" />
+    <Content Include="Resources\BrooklandsYears.txt" />
+    <Content Include="Resources\BroughamYears.txt" />
+    <Content Include="Resources\BRZYears.txt" />
+    <Content Include="Resources\BuickModels.txt" />
+    <Content Include="Resources\BulletYears.txt" />
+    <Content Include="Resources\C ser.Years.txt" />
+    <Content Include="Resources\C-MAXYears.txt" />
+    <Content Include="Resources\C.T.S. DefenderYears.txt" />
+    <Content Include="Resources\C2000Years.txt" />
+    <Content Include="Resources\C30Years.txt" />
+    <Content Include="Resources\C70Years.txt" />
+    <Content Include="Resources\CaballeroYears.txt" />
+    <Content Include="Resources\Cabrio-CabrioletYears.txt" />
+    <Content Include="Resources\Cabriolet-Years.txt" />
+    <Content Include="Resources\CadenzaYears.txt" />
+    <Content Include="Resources\CadillacModels.txt" />
+    <Content Include="Resources\CalaisYears.txt" />
+    <Content Include="Resources\CaliberYears.txt" />
+    <Content Include="Resources\CalienteYears.txt" />
+    <Content Include="Resources\California TYears.txt" />
+    <Content Include="Resources\CaliforniaYears.txt" />
+    <Content Include="Resources\CamargueYears.txt" />
+    <Content Include="Resources\CamaroYears.txt" />
+    <Content Include="Resources\Cambridge Concord CranbrookYears.txt" />
+    <Content Include="Resources\Camry HybridYears.txt" />
+    <Content Include="Resources\Camry SolaraYears.txt" />
+    <Content Include="Resources\CamryYears.txt" />
+    <Content Include="Resources\CanyonYears.txt" />
+    <Content Include="Resources\CapriceYears.txt" />
+    <Content Include="Resources\CapriYears.txt" />
+    <Content Include="Resources\Captiva SportYears.txt" />
+    <Content Include="Resources\Car 1Years.txt" />
+    <Content Include="Resources\Caravan   Grand Caravan   Ram C V   Years.txt" />
+    <Content Include="Resources\CaravelleYears.txt" />
+    <Content Include="Resources\CargoYears.txt" />
+    <Content Include="Resources\CaribbeanYears.txt" />
+    <Content Include="Resources\CarinaYears.txt" />
+    <Content Include="Resources\CarMakes.txt" />
+    <Content Include="Resources\Carrera GTYears.txt" />
+    <Content Include="Resources\CascadiaYears.txt" />
+    <Content Include="Resources\CAT %28CT660,CT681%29Models.txt" />
+    <Content Include="Resources\CatalinaYears.txt" />
+    <Content Include="Resources\CateraYears.txt" />
+    <Content Include="Resources\CavalierYears.txt" />
+    <Content Include="Resources\CayenneYears.txt" />
+    <Content Include="Resources\CaymanYears.txt" />
+    <Content Include="Resources\CB MB VansYears.txt" />
+    <Content Include="Resources\CCYears.txt" />
+    <Content Include="Resources\CelebrityYears.txt" />
+    <Content Include="Resources\CelicaYears.txt" />
+    <Content Include="Resources\CenturionYears.txt" />
+    <Content Include="Resources\CenturyYears.txt" />
+    <Content Include="Resources\Challenger CrusaderYears.txt" />
+    <Content Include="Resources\ChallengerYears.txt" />
+    <Content Include="Resources\Champion BusModels.txt" />
+    <Content Include="Resources\ChampionYears.txt" />
+    <Content Include="Resources\ChampYears.txt" />
+    <Content Include="Resources\Chance CoachModels.txt" />
+    <Content Include="Resources\CharadeYears.txt" />
+    <Content Include="Resources\ChargerYears.txt" />
+    <Content Include="Resources\Cherokee WagoneerYears.txt" />
+    <Content Include="Resources\ChevelleYears.txt" />
+    <Content Include="Resources\ChevetteYears.txt" />
+    <Content Include="Resources\ChevroletModels.txt" />
+    <Content Include="Resources\Chevy IIYears.txt" />
+    <Content Include="Resources\ChieftainYears.txt" />
+    <Content Include="Resources\ChryslerModels.txt" />
+    <Content Include="Resources\CimarronYears.txt" />
+    <Content Include="Resources\CirrusYears.txt" />
+    <Content Include="Resources\CitationYears.txt" />
+    <Content Include="Resources\City ExpressYears.txt" />
+    <Content Include="Resources\Civic del SolYears.txt" />
+    <Content Include="Resources\Civic HybridYears.txt" />
+    <Content Include="Resources\CivicYears.txt" />
+    <Content Include="Resources\Civis Cristalis 12m w E70XH axleYears.txt" />
+    <Content Include="Resources\Civis Cristalis 18m w E70XH axleYears.txt" />
+    <Content Include="Resources\CJ-5Years.txt" />
+    <Content Include="Resources\CJ-6Years.txt" />
+    <Content Include="Resources\CJ-7Years.txt" />
+    <Content Include="Resources\CJ-8 ScramblerYears.txt" />
+    <Content Include="Resources\Clark AxlesYears.txt" />
+    <Content Include="Resources\Classic %28incl. Custom, Deluxe, Super%29Years.txt" />
+    <Content Include="Resources\CLAYears.txt" />
+    <Content Include="Resources\ClipperYears.txt" />
+    <Content Include="Resources\CLYears.txt" />
+    <Content Include="Resources\CMAYears.txt" />
+    <Content Include="Resources\CobaltYears.txt" />
+    <Content Include="Resources\COE %28C ser. -1986%29Years.txt" />
+    <Content Include="Resources\COE %28CF ser. 1987-95%29Years.txt" />
+    <Content Include="Resources\COE %28CL,CLT 9000%29Years.txt" />
+    <Content Include="Resources\COE -1988Years.txt" />
+    <Content Include="Resources\Colony Park Commuter WagonYears.txt" />
+    <Content Include="Resources\ColoradoYears.txt" />
+    <Content Include="Resources\Colt %28Canada%29Years.txt" />
+    <Content Include="Resources\Colt VistaYears.txt" />
+    <Content Include="Resources\ColtYears.txt" />
+    <Content Include="Resources\ColumbiaYears.txt" />
+    <Content Include="Resources\ComancheYears.txt" />
+    <Content Include="Resources\CometYears.txt" />
+    <Content Include="Resources\CommanderYears.txt" />
+    <Content Include="Resources\CommodoreYears.txt" />
+    <Content Include="Resources\CompassYears.txt" />
+    <Content Include="Resources\ConcordeYears.txt" />
+    <Content Include="Resources\ConcordYears.txt" />
+    <Content Include="Resources\Condor Refuse w Rockwell Meritor AxleYears.txt" />
+    <Content Include="Resources\ConquestYears.txt" />
+    <Content Include="Resources\Continental Flying SpurYears.txt" />
+    <Content Include="Resources\Continental GTCYears.txt" />
+    <Content Include="Resources\Continental GTYears.txt" />
+    <Content Include="Resources\ContinentalYears.txt" />
+    <Content Include="Resources\ContourYears.txt" />
+    <Content Include="Resources\CoralYears.txt" />
+    <Content Include="Resources\CordiaYears.txt" />
+    <Content Include="Resources\CordobaYears.txt" />
+    <Content Include="Resources\CornicheYears.txt" />
+    <Content Include="Resources\CorollaYears.txt" />
+    <Content Include="Resources\CoronadoYears.txt" />
+    <Content Include="Resources\CoronaYears.txt" />
+    <Content Include="Resources\Coronet %28incl. Super Bee%29Years.txt" />
+    <Content Include="Resources\CorradoYears.txt" />
+    <Content Include="Resources\CorsairYears.txt" />
+    <Content Include="Resources\CorsicaYears.txt" />
+    <Content Include="Resources\CortinaYears.txt" />
+    <Content Include="Resources\CorvairYears.txt" />
+    <Content Include="Resources\CorvetteYears.txt" />
+    <Content Include="Resources\CosmopolitanYears.txt" />
+    <Content Include="Resources\CosmoYears.txt" />
+    <Content Include="Resources\CougarYears.txt" />
+    <Content Include="Resources\CountachYears.txt" />
+    <Content Include="Resources\Country Sedan Squire Ranch WagonYears.txt" />
+    <Content Include="Resources\Coupe %28incl. GT%29Years.txt" />
+    <Content Include="Resources\Coupe QuattroYears.txt" />
+    <Content Include="Resources\Coupe Spyder %28incl. 4200%29Years.txt" />
+    <Content Include="Resources\CourierYears.txt" />
+    <Content Include="Resources\CPBYears.txt" />
+    <Content Include="Resources\CPCBTYears.txt" />
+    <Content Include="Resources\CPCYears.txt" />
+    <Content Include="Resources\CR-VYears.txt" />
+    <Content Include="Resources\CR-ZYears.txt" />
+    <Content Include="Resources\CressidaYears.txt" />
+    <Content Include="Resources\CricketYears.txt" />
+    <Content Include="Resources\Crossfire %28incl. SRT6%29Years.txt" />
+    <Content Include="Resources\Crosstour %28incl. Accord Crosstour%29Years.txt" />
+    <Content Include="Resources\Crown Victoria LTD Crown VictoriaYears.txt" />
+    <Content Include="Resources\CrownYears.txt" />
+    <Content Include="Resources\Cruze %28incl. Limited%29Years.txt" />
+    <Content Include="Resources\CRXYears.txt" />
+    <Content Include="Resources\CSXYears.txt" />
+    <Content Include="Resources\CSYears.txt" />
+    <Content Include="Resources\CT %28200h%29Years.txt" />
+    <Content Include="Resources\CTS-VYears.txt" />
+    <Content Include="Resources\CTSYears.txt" />
+    <Content Include="Resources\CubeYears.txt" />
+    <Content Include="Resources\Custom %28incl. Customline Mainline%29Years.txt" />
+    <Content Include="Resources\Custom CruiserYears.txt" />
+    <Content Include="Resources\CustomYears.txt" />
+    <Content Include="Resources\Cutlass CieraYears.txt" />
+    <Content Include="Resources\Cutlass CruiserYears.txt" />
+    <Content Include="Resources\Cutlass Cutlass SupremeYears.txt" />
+    <Content Include="Resources\CX-3Years.txt" />
+    <Content Include="Resources\CX-5Years.txt" />
+    <Content Include="Resources\CX-7Years.txt" />
+    <Content Include="Resources\CX-9Years.txt" />
+    <Content Include="Resources\CycloneYears.txt" />
+    <Content Include="Resources\CygnetYears.txt" />
+    <Content Include="Resources\D W ser. Pkup %281960-93%29Years.txt" />
+    <Content Include="Resources\D, E, J ser.Years.txt" />
+    <Content Include="Resources\D40LFYears.txt" />
+    <Content Include="Resources\D500 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\D600 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\D60LFYears.txt" />
+    <Content Include="Resources\D700 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\D800 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\DaewooModels.txt" />
+    <Content Include="Resources\DaihatsuModels.txt" />
+    <Content Include="Resources\DakotaYears.txt" />
+    <Content Include="Resources\Dana I-160W,I-180W,I-200W,I-220W %2816K-22K%29Years.txt" />
+    <Content Include="Resources\Dana Spicer Front Drive AxlesYears.txt" />
+    <Content Include="Resources\Dana Spicer I-Beam AxlesYears.txt" />
+    <Content Include="Resources\DartYears.txt" />
+    <Content Include="Resources\DasherYears.txt" />
+    <Content Include="Resources\Daytona %28Canada%29Years.txt" />
+    <Content Include="Resources\DaytonaYears.txt" />
+    <Content Include="Resources\DB5Years.txt" />
+    <Content Include="Resources\DB6Years.txt" />
+    <Content Include="Resources\DB7Years.txt" />
+    <Content Include="Resources\DB9Years.txt" />
+    <Content Include="Resources\DBSYears.txt" />
+    <Content Include="Resources\DE60LFAYears.txt" />
+    <Content Include="Resources\DE60LFR+Years.txt" />
+    <Content Include="Resources\DE60LFRYears.txt" />
+    <Content Include="Resources\DE60LFYears.txt" />
+    <Content Include="Resources\DefenderYears.txt" />
+    <Content Include="Resources\Del RayYears.txt" />
+    <Content Include="Resources\Delica %28Japan RYears.txt" />
+    <Content Include="Resources\DeLoreanModels.txt" />
+    <Content Include="Resources\Deluxe Special DeluxeYears.txt" />
+    <Content Include="Resources\Demo VehiclesModels.txt" />
+    <Content Include="Resources\DemonYears.txt" />
+    <Content Include="Resources\DeSoto %28All 1961 Models%29Years.txt" />
+    <Content Include="Resources\DeSotoModels.txt" />
+    <Content Include="Resources\DeTomasoModels.txt" />
+    <Content Include="Resources\DeVille incl. Concours DHSYears.txt" />
+    <Content Include="Resources\DiabloYears.txt" />
+    <Content Include="Resources\DiamanteYears.txt" />
+    <Content Include="Resources\DinaModels.txt" />
+    <Content Include="Resources\Dino 206 GTYears.txt" />
+    <Content Include="Resources\Dino 246 GTYears.txt" />
+    <Content Include="Resources\DiplomatYears.txt" />
+    <Content Include="Resources\Discovery SportYears.txt" />
+    <Content Include="Resources\DiscoveryYears.txt" />
+    <Content Include="Resources\DJ-5 DJ-6Years.txt" />
+    <Content Include="Resources\DLYears.txt" />
+    <Content Include="Resources\DMC 12 %281981-83%29Years.txt" />
+    <Content Include="Resources\Dodge   Ram   SRTModels.txt" />
+    <Content Include="Resources\DodgeModels.txt" />
+    <Content Include="Resources\DTSYears.txt" />
+    <Content Include="Resources\DurangoYears.txt" />
+    <Content Include="Resources\DusterYears.txt" />
+    <Content Include="Resources\Dynasty %28Canada%29Years.txt" />
+    <Content Include="Resources\DynastyYears.txt" />
+    <Content Include="Resources\E ClassYears.txt" />
+    <Content Include="Resources\E100 E150 EconolineYears.txt" />
+    <Content Include="Resources\E250 E350 E450 E-Super DutyYears.txt" />
+    <Content Include="Resources\E550Years.txt" />
+    <Content Include="Resources\Eagle BusModels.txt" />
+    <Content Include="Resources\Eagle MedallionYears.txt" />
+    <Content Include="Resources\Eagle PremierYears.txt" />
+    <Content Include="Resources\EagleModels.txt" />
+    <Content Include="Resources\EagleYears.txt" />
+    <Content Include="Resources\Eaton Axles %28EFA12F3, EFA13F3, EFA12F4%29 8000lb. loadYears.txt" />
+    <Content Include="Resources\Eaton Axles w msYears.txt" />
+    <Content Include="Resources\Eaton Axles w PASYears.txt" />
+    <Content Include="Resources\Eaton AxlesYears.txt" />
+    <Content Include="Resources\Eaton I-Beam AxlesYears.txt" />
+    <Content Include="Resources\Eaton Spicer AxlesYears.txt" />
+    <Content Include="Resources\EchoYears.txt" />
+    <Content Include="Resources\EclipseYears.txt" />
+    <Content Include="Resources\EdgeYears.txt" />
+    <Content Include="Resources\EdselModels.txt" />
+    <Content Include="Resources\Eighty Eight ser. %28incl. Dynamic, Super%29Years.txt" />
+    <Content Include="Resources\EightYears.txt" />
+    <Content Include="Resources\El CaminoYears.txt" />
+    <Content Include="Resources\Elantra Touring GT %282009-  %29Years.txt" />
+    <Content Include="Resources\ElantraYears.txt" />
+    <Content Include="Resources\ElanYears.txt" />
+    <Content Include="Resources\EldoradoYears.txt" />
+    <Content Include="Resources\ElectraYears.txt" />
+    <Content Include="Resources\ElementYears.txt" />
+    <Content Include="Resources\EliseYears.txt" />
+    <Content Include="Resources\EliteYears.txt" />
+    <Content Include="Resources\ELRYears.txt" />
+    <Content Include="Resources\ELYears.txt" />
+    <Content Include="Resources\EnclaveYears.txt" />
+    <Content Include="Resources\EncoreYears.txt" />
+    <Content Include="Resources\EndeavorYears.txt" />
+    <Content Include="Resources\EntourageYears.txt" />
+    <Content Include="Resources\EnvoyYears.txt" />
+    <Content Include="Resources\EnzoYears.txt" />
+    <Content Include="Resources\EosYears.txt" />
+    <Content Include="Resources\EpicaYears.txt" />
+    <Content Include="Resources\EquatorYears.txt" />
+    <Content Include="Resources\EquinoxYears.txt" />
+    <Content Include="Resources\EquusYears.txt" />
+    <Content Include="Resources\ES %28250 300 330 350%29Years.txt" />
+    <Content Include="Resources\ES Hybrid %28300h%29Years.txt" />
+    <Content Include="Resources\EscaladeYears.txt" />
+    <Content Include="Resources\EscapeYears.txt" />
+    <Content Include="Resources\Escort %28incl. ZX2%29Years.txt" />
+    <Content Include="Resources\EspadaYears.txt" />
+    <Content Include="Resources\EsperanteYears.txt" />
+    <Content Include="Resources\EspritYears.txt" />
+    <Content Include="Resources\Estate WagonYears.txt" />
+    <Content Include="Resources\EsteemYears.txt" />
+    <Content Include="Resources\Eurovan Transporter %28T4%29Years.txt" />
+    <Content Include="Resources\EvoraYears.txt" />
+    <Content Include="Resources\EX %2835 37%29Years.txt" />
+    <Content Include="Resources\exc Eaton AxlesYears.txt" />
+    <Content Include="Resources\ExcelYears.txt" />
+    <Content Include="Resources\ExcursionYears.txt" />
+    <Content Include="Resources\ExecutiveYears.txt" />
+    <Content Include="Resources\ExigeYears.txt" />
+    <Content Include="Resources\ExpeditionYears.txt" />
+    <Content Include="Resources\Explorer Sport TracYears.txt" />
+    <Content Include="Resources\ExplorerYears.txt" />
+    <Content Include="Resources\Expo Expo LRVYears.txt" />
+    <Content Include="Resources\Express M4REYears.txt" />
+    <Content Include="Resources\Express Van %281996-  %29Years.txt" />
+    <Content Include="Resources\EXPYears.txt" />
+    <Content Include="Resources\F-53 Motorhome   F-59 Commercial Stripped chas.Years.txt" />
+    <Content Include="Resources\F-85Years.txt" />
+    <Content Include="Resources\F-TypeYears.txt" />
+    <Content Include="Resources\F100 F150Years.txt" />
+    <Content Include="Resources\F12berlinettaYears.txt" />
+    <Content Include="Resources\F250 F250 Super DutyYears.txt" />
+    <Content Include="Resources\F350 F350 Super DutyYears.txt" />
+    <Content Include="Resources\F40Years.txt" />
+    <Content Include="Resources\F430Years.txt" />
+    <Content Include="Resources\F450 F550 F-Super DutyYears.txt" />
+    <Content Include="Resources\F50Years.txt" />
+    <Content Include="Resources\F55 4 dr. Hardtop %282015 -     %29Years.txt" />
+    <Content Include="Resources\F56 2 dr. Hardtop %282014 -     %29Years.txt" />
+    <Content Include="Resources\F650 F750 Super DutyYears.txt" />
+    <Content Include="Resources\Fabco AxlesYears.txt" />
+    <Content Include="Resources\Fabco Front Drive AxlesYears.txt" />
+    <Content Include="Resources\Fabco SDA-1800,SDA-2100 %2818K-21K%29Years.txt" />
+    <Content Include="Resources\Fabco SDA-2300 %2823K%29Years.txt" />
+    <Content Include="Resources\Factory Settings All Models Axles 2002-Years.txt" />
+    <Content Include="Resources\FairlaneYears.txt" />
+    <Content Include="Resources\Fairmont FuturaYears.txt" />
+    <Content Include="Resources\Falcon Club WagonYears.txt" />
+    <Content Include="Resources\FalconYears.txt" />
+    <Content Include="Resources\FC-150 FC-170Years.txt" />
+    <Content Include="Resources\FE ModelsYears.txt" />
+    <Content Include="Resources\FerrariModels.txt" />
+    <Content Include="Resources\FestivaYears.txt" />
+    <Content Include="Resources\FEYears.txt" />
+    <Content Include="Resources\FFYears.txt" />
+    <Content Include="Resources\FG ModelsYears.txt" />
+    <Content Include="Resources\FH FK FM ModelsYears.txt" />
+    <Content Include="Resources\FiatModels.txt" />
+    <Content Include="Resources\FieroYears.txt" />
+    <Content Include="Resources\FiestaYears.txt" />
+    <Content Include="Resources\Fifth AvenueYears.txt" />
+    <Content Include="Resources\FirebirdYears.txt" />
+    <Content Include="Resources\FiredomeYears.txt" />
+    <Content Include="Resources\FirefliteYears.txt" />
+    <Content Include="Resources\FireflyYears.txt" />
+    <Content Include="Resources\FirenzaYears.txt" />
+    <Content Include="Resources\FiresweepYears.txt" />
+    <Content Include="Resources\Firetruck chas.Years.txt" />
+    <Content Include="Resources\FiretruckYears.txt" />
+    <Content Include="Resources\FiskerModels.txt" />
+    <Content Include="Resources\Fit EVYears.txt" />
+    <Content Include="Resources\FitYears.txt" />
+    <Content Include="Resources\Five HundredYears.txt" />
+    <Content Include="Resources\FJ CruiserYears.txt" />
+    <Content Include="Resources\FLA,FLB COE 1989-Years.txt" />
+    <Content Include="Resources\FLC 112 Conventional 1987-96Years.txt" />
+    <Content Include="Resources\FLC 112 Conventional 1997-Years.txt" />
+    <Content Include="Resources\FLD,CENTURY Conventional 1989-Years.txt" />
+    <Content Include="Resources\Fleetline FleetmasterYears.txt" />
+    <Content Include="Resources\Fleetwood %28incl. 60 Special%29Years.txt" />
+    <Content Include="Resources\FlexYears.txt" />
+    <Content Include="Resources\Flxible VehiclesModels.txt" />
+    <Content Include="Resources\Flying SpurYears.txt" />
+    <Content Include="Resources\FocusYears.txt" />
+    <Content Include="Resources\Ford F-53 F-59 chas.Years.txt" />
+    <Content Include="Resources\FordModels.txt" />
+    <Content Include="Resources\ForenzaYears.txt" />
+    <Content Include="Resources\ForesterYears.txt" />
+    <Content Include="Resources\ForsaYears.txt" />
+    <Content Include="Resources\ForteYears.txt" />
+    <Content Include="Resources\Four-HundredYears.txt" />
+    <Content Include="Resources\FoxYears.txt" />
+    <Content Include="Resources\FR-SYears.txt" />
+    <Content Include="Resources\FreelanderYears.txt" />
+    <Content Include="Resources\FreestarYears.txt" />
+    <Content Include="Resources\FreestyleYears.txt" />
+    <Content Include="Resources\Freightliner Custom Chassis CorpModels.txt" />
+    <Content Include="Resources\Freightliner Custom Chassis CorpYears.txt" />
+    <Content Include="Resources\FreightlinerModels.txt" />
+    <Content Include="Resources\FreightlinerYears.txt" />
+    <Content Include="Resources\Front Driving AxleYears.txt" />
+    <Content Include="Resources\FrontierYears.txt" />
+    <Content Include="Resources\FRRYears.txt" />
+    <Content Include="Resources\FSRYears.txt" />
+    <Content Include="Resources\FTRYears.txt" />
+    <Content Include="Resources\FuegoYears.txt" />
+    <Content Include="Resources\FujiYears.txt" />
+    <Content Include="Resources\FuryYears.txt" />
+    <Content Include="Resources\FusionYears.txt" />
+    <Content Include="Resources\FVRYears.txt" />
+    <Content Include="Resources\FX %2835 37 45 50%29Years.txt" />
+    <Content Include="Resources\FXRYears.txt" />
+    <Content Include="Resources\G %2820 25 35 37%29 SedanYears.txt" />
+    <Content Include="Resources\G %2835 37%29 CoupeYears.txt" />
+    <Content Include="Resources\G ser. Vans %281973-96%29Years.txt" />
+    <Content Include="Resources\G1Years.txt" />
+    <Content Include="Resources\G3   WaveYears.txt" />
+    <Content Include="Resources\G3 CoachYears.txt" />
+    <Content Include="Resources\G37 ConvertibleYears.txt" />
+    <Content Include="Resources\G4Years.txt" />
+    <Content Include="Resources\G5 %28incl. Pursuit G5 Pursuit%29Years.txt" />
+    <Content Include="Resources\G6Years.txt" />
+    <Content Include="Resources\G8Years.txt" />
+    <Content Include="Resources\GalantYears.txt" />
+    <Content Include="Resources\GalaxieYears.txt" />
+    <Content Include="Resources\GallardoYears.txt" />
+    <Content Include="Resources\GenesisYears.txt" />
+    <Content Include="Resources\GeoModels.txt" />
+    <Content Include="Resources\GFYears.txt" />
+    <Content Include="Resources\GhibliYears.txt" />
+    <Content Include="Resources\Ghost %28RR4%29Years.txt" />
+    <Content Include="Resources\Gillig CorporationModels.txt" />
+    <Content Include="Resources\Gillig CorporationYears.txt" />
+    <Content Include="Resources\GKN AxlesYears.txt" />
+    <Content Include="Resources\GL GL-10Years.txt" />
+    <Content Include="Resources\GLCYears.txt" />
+    <Content Include="Resources\GLFYears.txt" />
+    <Content Include="Resources\GM Classic BusModels.txt" />
+    <Content Include="Resources\GM Years.txt" />
+    <Content Include="Resources\GMCModels.txt" />
+    <Content Include="Resources\GMC]Years.txt" />
+    <Content Include="Resources\Golf City %28Canada%29Years.txt" />
+    <Content Include="Resources\Golf Jetta Wagon %28incl. SportWagen%29Years.txt" />
+    <Content Include="Resources\Golf Rabbit %28incl. GTI, R32%29Years.txt" />
+    <Content Include="Resources\GordiniYears.txt" />
+    <Content Include="Resources\Gran FuryYears.txt" />
+    <Content Include="Resources\Gran Torino TorinoYears.txt" />
+    <Content Include="Resources\GranadaYears.txt" />
+    <Content Include="Resources\Grand AmYears.txt" />
+    <Content Include="Resources\Grand CherokeeYears.txt" />
+    <Content Include="Resources\Grand MarquisYears.txt" />
+    <Content Include="Resources\Grand PrixYears.txt" />
+    <Content Include="Resources\Grand VitaraYears.txt" />
+    <Content Include="Resources\Grand WagoneerYears.txt" />
+    <Content Include="Resources\GrandvilleYears.txt" />
+    <Content Include="Resources\GranSportYears.txt" />
+    <Content Include="Resources\GranTurismo   GranCabrioYears.txt" />
+    <Content Include="Resources\GremlinYears.txt" />
+    <Content Include="Resources\GS %28300 330 350 400 430 460%29Years.txt" />
+    <Content Include="Resources\GS Hybrid %28450h%29Years.txt" />
+    <Content Include="Resources\GT-RYears.txt" />
+    <Content Include="Resources\GT6Years.txt" />
+    <Content Include="Resources\GTAYears.txt" />
+    <Content Include="Resources\GTOYears.txt" />
+    <Content Include="Resources\GTV, BerlinaYears.txt" />
+    <Content Include="Resources\GTV-6Years.txt" />
+    <Content Include="Resources\GTXYears.txt" />
+    <Content Include="Resources\GTYears.txt" />
+    <Content Include="Resources\GX %28460 470%29Years.txt" />
+    <Content Include="Resources\H1 %28Normal Operating Load%29Years.txt" />
+    <Content Include="Resources\H1 Civilian %28Normal Operating Load%29Years.txt" />
+    <Content Include="Resources\H2Years.txt" />
+    <Content Include="Resources\H3 Bus H3 VIPYears.txt" />
+    <Content Include="Resources\H3Years.txt" />
+    <Content Include="Resources\Hawk ser.Years.txt" />
+    <Content Include="Resources\Hendrickson Axles w PASYears.txt" />
+    <Content Include="Resources\Hendrickson AxlesYears.txt" />
+    <Content Include="Resources\Herald 1200Years.txt" />
+    <Content Include="Resources\HHRYears.txt" />
+    <Content Include="Resources\Highlander HybridYears.txt" />
+    <Content Include="Resources\HighlanderYears.txt" />
+    <Content Include="Resources\HINOModels.txt" />
+    <Content Include="Resources\HLDYears.txt" />
+    <Content Include="Resources\HMDYears.txt" />
+    <Content Include="Resources\HMEModels.txt" />
+    <Content Include="Resources\HMMWVYears.txt" />
+    <Content Include="Resources\HombreYears.txt" />
+    <Content Include="Resources\HondaModels.txt" />
+    <Content Include="Resources\Horizon TC3Years.txt" />
+    <Content Include="Resources\HornetYears.txt" />
+    <Content Include="Resources\HR-VYears.txt" />
+    <Content Include="Resources\HS %28250h%29Years.txt" />
+    <Content Include="Resources\HTR HVR HXRYears.txt" />
+    <Content Include="Resources\HummerModels.txt" />
+    <Content Include="Resources\Hurac�nYears.txt" />
+    <Content Include="Resources\Hyundai Truck USAModels.txt" />
+    <Content Include="Resources\HyundaiModels.txt" />
+    <Content Include="Resources\I %2830 35%29Years.txt" />
+    <Content Include="Resources\i-280 i-290 PkupYears.txt" />
+    <Content Include="Resources\i-350 i-370 PkupYears.txt" />
+    <Content Include="Resources\I-MarkYears.txt" />
+    <Content Include="Resources\i-MiEVYears.txt" />
+    <Content Include="Resources\i3 Series - I01 %282014 -     %29Years.txt" />
+    <Content Include="Resources\i8 Series - I12 %282014 -     %29Years.txt" />
+    <Content Include="Resources\ILXYears.txt" />
+    <Content Include="Resources\Impala %28incl. Limited%29Years.txt" />
+    <Content Include="Resources\ImperialYears.txt" />
+    <Content Include="Resources\Impreza Outback SportYears.txt" />
+    <Content Include="Resources\Impreza WRX WRX %28incl. STI%29Years.txt" />
+    <Content Include="Resources\ImpulseYears.txt" />
+    <Content Include="Resources\InfinitiModels.txt" />
+    <Content Include="Resources\InsightYears.txt" />
+    <Content Include="Resources\IntegraYears.txt" />
+    <Content Include="Resources\InternationalModels.txt" />
+    <Content Include="Resources\Intrepid %28Canada%29Years.txt" />
+    <Content Include="Resources\IntrepidYears.txt" />
+    <Content Include="Resources\IntrigueYears.txt" />
+    <Content Include="Resources\InvictaYears.txt" />
+    <Content Include="Resources\IONYears.txt" />
+    <Content Include="Resources\iQYears.txt" />
+    <Content Include="Resources\IrisbusModels.txt" />
+    <Content Include="Resources\IS %28250 300 350%29Years.txt" />
+    <Content Include="Resources\IS C %28250C 350C%29Years.txt" />
+    <Content Include="Resources\IS FYears.txt" />
+    <Content Include="Resources\IsuzuModels.txt" />
+    <Content Include="Resources\IvecoModels.txt" />
+    <Content Include="Resources\J ser. PkupYears.txt" />
+    <Content Include="Resources\J30Years.txt" />
+    <Content Include="Resources\J8Years.txt" />
+    <Content Include="Resources\JaguarModels.txt" />
+    <Content Include="Resources\JalpaYears.txt" />
+    <Content Include="Resources\JavelinYears.txt" />
+    <Content Include="Resources\JeepModels.txt" />
+    <Content Include="Resources\Jeepster Commando %28C-101%29Years.txt" />
+    <Content Include="Resources\JetfireYears.txt" />
+    <Content Include="Resources\Jetstar 88Years.txt" />
+    <Content Include="Resources\Jetstar IYears.txt" />
+    <Content Include="Resources\Jetta City %28Canada%29Years.txt" />
+    <Content Include="Resources\JettaYears.txt" />
+    <Content Include="Resources\Jimmy %28Full Size%29Years.txt" />
+    <Content Include="Resources\Jimmy %28S T ser.%29Years.txt" />
+    <Content Include="Resources\JourneyYears.txt" />
+    <Content Include="Resources\JUKEYears.txt" />
+    <Content Include="Resources\JustyYears.txt" />
+    <Content Include="Resources\JX35Years.txt" />
+    <Content Include="Resources\K900Years.txt" />
+    <Content Include="Resources\KadettYears.txt" />
+    <Content Include="Resources\Karma %282012%29Years.txt" />
+    <Content Include="Resources\Karmann GhiaYears.txt" />
+    <Content Include="Resources\KenworthModels.txt" />
+    <Content Include="Resources\KiaModels.txt" />
+    <Content Include="Resources\KizashiYears.txt" />
+    <Content Include="Resources\L ser.Years.txt" />
+    <Content Include="Resources\L1013Years.txt" />
+    <Content Include="Resources\L1113Years.txt" />
+    <Content Include="Resources\L1116Years.txt" />
+    <Content Include="Resources\L1117Years.txt" />
+    <Content Include="Resources\L1316Years.txt" />
+    <Content Include="Resources\L1317   L1319Years.txt" />
+    <Content Include="Resources\L1418Years.txt" />
+    <Content Include="Resources\LaCrosse AllureYears.txt" />
+    <Content Include="Resources\LadaModels.txt" />
+    <Content Include="Resources\LaFerrariYears.txt" />
+    <Content Include="Resources\LaforzaModels.txt" />
+    <Content Include="Resources\LagondaYears.txt" />
+    <Content Include="Resources\LamborghiniModels.txt" />
+    <Content Include="Resources\Lancer EvolutionYears.txt" />
+    <Content Include="Resources\LancerYears.txt" />
+    <Content Include="Resources\Land CruiserYears.txt" />
+    <Content Include="Resources\Land RoverModels.txt" />
+    <Content Include="Resources\LanosYears.txt" />
+    <Content Include="Resources\Lark ser.Years.txt" />
+    <Content Include="Resources\LaserYears.txt" />
+    <Content Include="Resources\LaurentianYears.txt" />
+    <Content Include="Resources\LCF %28Low Cab Forward%29Years.txt" />
+    <Content Include="Resources\LCFYears.txt" />
+    <Content Include="Resources\Le CarYears.txt" />
+    <Content Include="Resources\LEAFYears.txt" />
+    <Content Include="Resources\LeBaronYears.txt" />
+    <Content Include="Resources\Legacy OutbackYears.txt" />
+    <Content Include="Resources\LeganzaYears.txt" />
+    <Content Include="Resources\LegendYears.txt" />
+    <Content Include="Resources\LeMansYears.txt" />
+    <Content Include="Resources\LeSabreYears.txt" />
+    <Content Include="Resources\LexusModels.txt" />
+    <Content Include="Resources\LFAYears.txt" />
+    <Content Include="Resources\LHSYears.txt" />
+    <Content Include="Resources\LibertyYears.txt" />
+    <Content Include="Resources\LimitedYears.txt" />
+    <Content Include="Resources\Lincoln ser.Years.txt" />
+    <Content Include="Resources\LincolnModels.txt" />
+    <Content Include="Resources\LLV %28U.S. Postal Vehicle%29Years.txt" />
+    <Content Include="Resources\LMB L3REYears.txt" />
+    <Content Include="Resources\LN7Years.txt" />
+    <Content Include="Resources\LotusModels.txt" />
+    <Content Include="Resources\LouisvilleYears.txt" />
+    <Content Include="Resources\Low Floor BusYears.txt" />
+    <Content Include="Resources\LoyaleYears.txt" />
+    <Content Include="Resources\LP1219Years.txt" />
+    <Content Include="Resources\LP1419Years.txt" />
+    <Content Include="Resources\LPS1525Years.txt" />
+    <Content Include="Resources\LR2Years.txt" />
+    <Content Include="Resources\LR3Years.txt" />
+    <Content Include="Resources\LR4Years.txt" />
+    <Content Include="Resources\LS %28400 430 460%28L%29%29Years.txt" />
+    <Content Include="Resources\LS Hybrid %28600hL%29Years.txt" />
+    <Content Include="Resources\LS LW L ser.Years.txt" />
+    <Content Include="Resources\LS1418Years.txt" />
+    <Content Include="Resources\LSSYears.txt" />
+    <Content Include="Resources\LSYears.txt" />
+    <Content Include="Resources\LTC40 Q4REYears.txt" />
+    <Content Include="Resources\LTD IIYears.txt" />
+    <Content Include="Resources\LTDYears.txt" />
+    <Content Include="Resources\LTIModels.txt" />
+    <Content Include="Resources\LucerneYears.txt" />
+    <Content Include="Resources\Lumina APVYears.txt" />
+    <Content Include="Resources\LuminaYears.txt" />
+    <Content Include="Resources\LUV PkupYears.txt" />
+    <Content Include="Resources\LX %28450 470 570%29Years.txt" />
+    <Content Include="Resources\LynxYears.txt" />
+    <Content Include="Resources\M %2830 35 37 45 56%29Years.txt" />
+    <Content Include="Resources\M1       - E26 %281977 - 1981%29Years.txt" />
+    <Content Include="Resources\M12 %28US chas. #0001-#0043%29Years.txt" />
+    <Content Include="Resources\M12 M400 %28US chas. #0044-#0220%29Years.txt" />
+    <Content Include="Resources\M35h HybridYears.txt" />
+    <Content Include="Resources\Macan %2895B%29Years.txt" />
+    <Content Include="Resources\Mack Axles w ms -12 1994Years.txt" />
+    <Content Include="Resources\Mack Axles w ms 1 1995-Years.txt" />
+    <Content Include="Resources\Mack Axles w PAS -12 1994Years.txt" />
+    <Content Include="Resources\Mack Axles w PAS 1 1995-Years.txt" />
+    <Content Include="Resources\Mack AxlesYears.txt" />
+    <Content Include="Resources\Mack Midliner ModelsModels.txt" />
+    <Content Include="Resources\Mack w Front Driving AxlesModels.txt" />
+    <Content Include="Resources\Mack w Non-Driving Front Axles -1993Models.txt" />
+    <Content Include="Resources\Mack w Non-Driving Front Axles 1994-Models.txt" />
+    <Content Include="Resources\Mack w Two Front AxlesModels.txt" />
+    <Content Include="Resources\MagentisYears.txt" />
+    <Content Include="Resources\MagnumYears.txt" />
+    <Content Include="Resources\Malibu %28incl. Classic, Limited%29Years.txt" />
+    <Content Include="Resources\MaltezeYears.txt" />
+    <Content Include="Resources\MantiaYears.txt" />
+    <Content Include="Resources\Marauder S-55Years.txt" />
+    <Content Include="Resources\MarinerYears.txt" />
+    <Content Include="Resources\Mark IIYears.txt" />
+    <Content Include="Resources\Mark ser.Years.txt" />
+    <Content Include="Resources\MarlinYears.txt" />
+    <Content Include="Resources\Marmon Motor Co.Models.txt" />
+    <Content Include="Resources\Marmon-Herrington Axles -12 94Years.txt" />
+    <Content Include="Resources\Marmon-Herrington Axles 1 95-Years.txt" />
+    <Content Include="Resources\Marmon-Herrington AxlesYears.txt" />
+    <Content Include="Resources\MarquisYears.txt" />
+    <Content Include="Resources\MaseratiModels.txt" />
+    <Content Include="Resources\Master Master Deluxe %28incl. Master 85%29Years.txt" />
+    <Content Include="Resources\MatadorYears.txt" />
+    <Content Include="Resources\Matiz %28G2%29Years.txt" />
+    <Content Include="Resources\MatrixYears.txt" />
+    <Content Include="Resources\MaverickYears.txt" />
+    <Content Include="Resources\MaximaYears.txt" />
+    <Content Include="Resources\MaybachModels.txt" />
+    <Content Include="Resources\Mazda2Years.txt" />
+    <Content Include="Resources\Mazda3Years.txt" />
+    <Content Include="Resources\Mazda5Years.txt" />
+    <Content Include="Resources\Mazda6Years.txt" />
+    <Content Include="Resources\MazdaModels.txt" />
+    <Content Include="Resources\MC-9, 96A3 %28Rockwell -8 31 92%29Years.txt" />
+    <Content Include="Resources\MC-9, 96A3 %28Rockwell 9 1 92-%29Years.txt" />
+    <Content Include="Resources\MC12 %28Rockwell%29Years.txt" />
+    <Content Include="Resources\MCIModels.txt" />
+    <Content Include="Resources\McLarenModels.txt" />
+    <Content Include="Resources\MDXYears.txt" />
+    <Content Include="Resources\MedalistYears.txt" />
+    <Content Include="Resources\MedallionYears.txt" />
+    <Content Include="Resources\Medium DutyYears.txt" />
+    <Content Include="Resources\Mercedes-BenzModels.txt" />
+    <Content Include="Resources\MercedesModels.txt" />
+    <Content Include="Resources\Mercury M70 ser. %281950-52%29Years.txt" />
+    <Content Include="Resources\MercuryModels.txt" />
+    <Content Include="Resources\Meritor MFS-12-143A,MFS-13-143A,MFS-14-143A %2812K-14.6K%29Years.txt" />
+    <Content Include="Resources\Meritor MFS-16-143A,MFS-18-133A,MFS-20-133A,MFS-22-133A %2816K-22K%29Years.txt" />
+    <Content Include="Resources\MerkurModels.txt" />
+    <Content Include="Resources\MeteorYears.txt" />
+    <Content Include="Resources\MetroYears.txt" />
+    <Content Include="Resources\MGAYears.txt" />
+    <Content Include="Resources\MGBYears.txt" />
+    <Content Include="Resources\MGModels.txt" />
+    <Content Include="Resources\MicraYears.txt" />
+    <Content Include="Resources\Mid-RangerYears.txt" />
+    <Content Include="Resources\MidgetYears.txt" />
+    <Content Include="Resources\Mighty Max PkupYears.txt" />
+    <Content Include="Resources\MilanoYears.txt" />
+    <Content Include="Resources\MilanYears.txt" />
+    <Content Include="Resources\MilleniaYears.txt" />
+    <Content Include="Resources\MINIModels.txt" />
+    <Content Include="Resources\MiradaYears.txt" />
+    <Content Include="Resources\MirageYears.txt" />
+    <Content Include="Resources\Mitsubishi FusoModels.txt" />
+    <Content Include="Resources\MitsubishiModels.txt" />
+    <Content Include="Resources\MKCYears.txt" />
+    <Content Include="Resources\MKSYears.txt" />
+    <Content Include="Resources\MKTYears.txt" />
+    <Content Include="Resources\MKXYears.txt" />
+    <Content Include="Resources\MKZYears.txt" />
+    <Content Include="Resources\Mobility Ventures   VPGModels.txt" />
+    <Content Include="Resources\Model SYears.txt" />
+    <Content Include="Resources\Monaco Motor CoachYears.txt" />
+    <Content Include="Resources\MonacoYears.txt" />
+    <Content Include="Resources\MonarchYears.txt" />
+    <Content Include="Resources\MondialYears.txt" />
+    <Content Include="Resources\Montana %28incl. SV6%29Years.txt" />
+    <Content Include="Resources\MontclairYears.txt" />
+    <Content Include="Resources\Monte CarloYears.txt" />
+    <Content Include="Resources\MontegoYears.txt" />
+    <Content Include="Resources\MontereyYears.txt" />
+    <Content Include="Resources\Montero SportYears.txt" />
+    <Content Include="Resources\MonteroYears.txt" />
+    <Content Include="Resources\MonzaYears.txt" />
+    <Content Include="Resources\Motorhome B4REYears.txt" />
+    <Content Include="Resources\Motorhome chas.Models.txt" />
+    <Content Include="Resources\Motorhome chas.Years.txt" />
+    <Content Include="Resources\Motorhome W4REYears.txt" />
+    <Content Include="Resources\MotorhomeYears.txt" />
+    <Content Include="Resources\MountaineerYears.txt" />
+    <Content Include="Resources\MP4-12CYears.txt" />
+    <Content Include="Resources\MPVYears.txt" />
+    <Content Include="Resources\MR2   MR2 SpyderYears.txt" />
+    <Content Include="Resources\MS200Years.txt" />
+    <Content Include="Resources\MS250Years.txt" />
+    <Content Include="Resources\MS300Years.txt" />
+    <Content Include="Resources\MSYears.txt" />
+    <Content Include="Resources\MulsanneYears.txt" />
+    <Content Include="Resources\Murano CrossCabrioletYears.txt" />
+    <Content Include="Resources\MuranoYears.txt" />
+    <Content Include="Resources\MurcielagoYears.txt" />
+    <Content Include="Resources\MustangYears.txt" />
+    <Content Include="Resources\MV-1 %282011-14%29Years.txt" />
+    <Content Include="Resources\MX-3Years.txt" />
+    <Content Include="Resources\MX-5 MiataYears.txt" />
+    <Content Include="Resources\MX-6Years.txt" />
+    <Content Include="Resources\MystiqueYears.txt" />
+    <Content Include="Resources\NavajoYears.txt" />
+    <Content Include="Resources\NavigatorYears.txt" />
+    <Content Include="Resources\Neon SX 2.0 %28incl. 2003-05 SRT4%29Years.txt" />
+    <Content Include="Resources\NeonYears.txt" />
+    <Content Include="Resources\Neoplan USA Corp.Models.txt" />
+    <Content Include="Resources\New Flyer BusesModels.txt" />
+    <Content Include="Resources\New YorkerYears.txt" />
+    <Content Include="Resources\NewportYears.txt" />
+    <Content Include="Resources\Ninety EightYears.txt" />
+    <Content Include="Resources\NissanModels.txt" />
+    <Content Include="Resources\NitroYears.txt" />
+    <Content Include="Resources\NivaYears.txt" />
+    <Content Include="Resources\NobleModels.txt" />
+    <Content Include="Resources\Non-Driving 1st AxleYears.txt" />
+    <Content Include="Resources\Non-Driving 2nd AxleYears.txt" />
+    <Content Include="Resources\North American Bus IndustriesModels.txt" />
+    <Content Include="Resources\North American CoachModels.txt" />
+    <Content Include="Resources\Nova BusModels.txt" />
+    <Content Include="Resources\NovaYears.txt" />
+    <Content Include="Resources\NPR NPR-Years.txt" />
+    <Content Include="Resources\NSXYears.txt" />
+    <Content Include="Resources\NubiraYears.txt" />
+    <Content Include="Resources\NV1500 NV2500Years.txt" />
+    <Content Include="Resources\NV200Years.txt" />
+    <Content Include="Resources\NV3500Years.txt" />
+    <Content Include="Resources\NX %28200t%29Years.txt" />
+    <Content Include="Resources\NX CoupeYears.txt" />
+    <Content Include="Resources\NX Hybrid %28300h%29Years.txt" />
+    <Content Include="Resources\OasisYears.txt" />
+    <Content Include="Resources\OdysseyYears.txt" />
+    <Content Include="Resources\Older Models %28Datsun ..1983%29Years.txt" />
+    <Content Include="Resources\OldsmobileModels.txt" />
+    <Content Include="Resources\OmegaYears.txt" />
+    <Content Include="Resources\Omni 024Years.txt" />
+    <Content Include="Resources\One-77Years.txt" />
+    <Content Include="Resources\Opel %28Isuzu%29Years.txt" />
+    <Content Include="Resources\OpelModels.txt" />
+    <Content Include="Resources\Optima Hybrid %28HEV%29Years.txt" />
+    <Content Include="Resources\OptimaYears.txt" />
+    <Content Include="Resources\OptraYears.txt" />
+    <Content Include="Resources\Opus Low-Floor BusYears.txt" />
+    <Content Include="Resources\Orion %2817100 Axles%29Years.txt" />
+    <Content Include="Resources\Orion %28All Axles exc 17100%29Years.txt" />
+    <Content Include="Resources\Orion Bus IndustriesModels.txt" />
+    <Content Include="Resources\Orion II FWDYears.txt" />
+    <Content Include="Resources\Orion IYears.txt" />
+    <Content Include="Resources\Orion VIIYears.txt" />
+    <Content Include="Resources\Orion VIYears.txt" />
+    <Content Include="Resources\Orion VYears.txt" />
+    <Content Include="Resources\OrlandoYears.txt" />
+    <Content Include="Resources\Other ModelsYears.txt" />
+    <Content Include="Resources\Outlander Sport RVRYears.txt" />
+    <Content Include="Resources\OutlanderYears.txt" />
+    <Content Include="Resources\OUTLOOKYears.txt" />
+    <Content Include="Resources\P ser. %281998-2005%29Years.txt" />
+    <Content Include="Resources\P ser. Commercial VansYears.txt" />
+    <Content Include="Resources\P%27up Pkup %281981-95%29Years.txt" />
+    <Content Include="Resources\P1Years.txt" />
+    <Content Include="Resources\PacerYears.txt" />
+    <Content Include="Resources\PacificaYears.txt" />
+    <Content Include="Resources\Packard %281954%29Years.txt" />
+    <Content Include="Resources\PackardModels.txt" />
+    <Content Include="Resources\Panamera %28970%29Years.txt" />
+    <Content Include="Resources\PanozModels.txt" />
+    <Content Include="Resources\Pantera %281971-74%29Years.txt" />
+    <Content Include="Resources\ParisienneYears.txt" />
+    <Content Include="Resources\Park Avenue UltraYears.txt" />
+    <Content Include="Resources\Park LaneYears.txt" />
+    <Content Include="Resources\Park WardYears.txt" />
+    <Content Include="Resources\PaseoYears.txt" />
+    <Content Include="Resources\PassatYears.txt" />
+    <Content Include="Resources\PassportYears.txt" />
+    <Content Include="Resources\Pathfinder HybridYears.txt" />
+    <Content Include="Resources\PathfinderYears.txt" />
+    <Content Include="Resources\PatricianYears.txt" />
+    <Content Include="Resources\PatriotYears.txt" />
+    <Content Include="Resources\PeterbiltModels.txt" />
+    <Content Include="Resources\PeterbiltYears.txt" />
+    <Content Include="Resources\PeugeotModels.txt" />
+    <Content Include="Resources\PhaetonYears.txt" />
+    <Content Include="Resources\PhantomYears.txt" />
+    <Content Include="Resources\PhoenixYears.txt" />
+    <Content Include="Resources\Pierce ManufacturingModels.txt" />
+    <Content Include="Resources\PilotYears.txt" />
+    <Content Include="Resources\PintoYears.txt" />
+    <Content Include="Resources\Pkup %281983�-97%29Years.txt" />
+    <Content Include="Resources\Pkup %28Full Size%29 1947-1998Years.txt" />
+    <Content Include="Resources\Pkup %28Full Size%29 1960-98Years.txt" />
+    <Content Include="Resources\Pkup %28Full Size%29 1999-2015Years.txt" />
+    <Content Include="Resources\Pkup Hi-Lux %281969-95 exc T100, Tacoma%29Years.txt" />
+    <Content Include="Resources\Pkup TravelallYears.txt" />
+    <Content Include="Resources\PlazaYears.txt" />
+    <Content Include="Resources\PlymouthModels.txt" />
+    <Content Include="Resources\PolaraYears.txt" />
+    <Content Include="Resources\PontiacModels.txt" />
+    <Content Include="Resources\PonyYears.txt" />
+    <Content Include="Resources\PorscheModels.txt" />
+    <Content Include="Resources\PowermasterYears.txt" />
+    <Content Include="Resources\PrecisYears.txt" />
+    <Content Include="Resources\PreludeYears.txt" />
+    <Content Include="Resources\PremiereYears.txt" />
+    <Content Include="Resources\PremierYears.txt" />
+    <Content Include="Resources\PresidentYears.txt" />
+    <Content Include="Resources\PrestaYears.txt" />
+    <Content Include="Resources\PreviaYears.txt" />
+    <Content Include="Resources\PrevostModels.txt" />
+    <Content Include="Resources\Prius cYears.txt" />
+    <Content Include="Resources\Prius PHV %28Plug-in Hybrid Vehicle%29Years.txt" />
+    <Content Include="Resources\Prius vYears.txt" />
+    <Content Include="Resources\PriusYears.txt" />
+    <Content Include="Resources\PrizmYears.txt" />
+    <Content Include="Resources\ProbeYears.txt" />
+    <Content Include="Resources\ProMaster CityYears.txt" />
+    <Content Include="Resources\ProMasterYears.txt" />
+    <Content Include="Resources\Protege5Years.txt" />
+    <Content Include="Resources\ProtegeYears.txt" />
+    <Content Include="Resources\ProwlerYears.txt" />
+    <Content Include="Resources\PT CruiserYears.txt" />
+    <Content Include="Resources\Pulsar NXYears.txt" />
+    <Content Include="Resources\Q1 %282008-   chas. #0001-  %29Years.txt" />
+    <Content Include="Resources\Q3 RS Q3 QuattroYears.txt" />
+    <Content Include="Resources\Q3Years.txt" />
+    <Content Include="Resources\Q40Years.txt" />
+    <Content Include="Resources\Q45Years.txt" />
+    <Content Include="Resources\Q5 SQ5 QuattroYears.txt" />
+    <Content Include="Resources\Q50 HybridYears.txt" />
+    <Content Include="Resources\Q50Years.txt" />
+    <Content Include="Resources\Q60Years.txt" />
+    <Content Include="Resources\Q70 HybridYears.txt" />
+    <Content Include="Resources\Q70Years.txt" />
+    <Content Include="Resources\Q7Years.txt" />
+    <Content Include="Resources\QuantumYears.txt" />
+    <Content Include="Resources\QuattroporteYears.txt" />
+    <Content Include="Resources\QuattroYears.txt" />
+    <Content Include="Resources\QuestYears.txt" />
+    <Content Include="Resources\QX4Years.txt" />
+    <Content Include="Resources\QX50Years.txt" />
+    <Content Include="Resources\QX56Years.txt" />
+    <Content Include="Resources\QX60 HybridYears.txt" />
+    <Content Include="Resources\QX60Years.txt" />
+    <Content Include="Resources\QX70Years.txt" />
+    <Content Include="Resources\QX80Years.txt" />
+    <Content Include="Resources\R-12 R-15 R-17Years.txt" />
+    <Content Include="Resources\R-8 R-10Years.txt" />
+    <Content Include="Resources\R50 Hardtop %282002 - 2006%29Years.txt" />
+    <Content Include="Resources\R52 Cabriolet %282005 - 2008%29Years.txt" />
+    <Content Include="Resources\R53 Hardtop %282002 - 2006%29Years.txt" />
+    <Content Include="Resources\R55 Clubman %282008 - 2014%29Years.txt" />
+    <Content Include="Resources\R56 Hardtop %282007 - 2013%29Years.txt" />
+    <Content Include="Resources\R57 Cabriolet %282009 -     %29Years.txt" />
+    <Content Include="Resources\R58 Coupe %282012 - 2015%29Years.txt" />
+    <Content Include="Resources\R59 Roadster %282012 - 2015%29Years.txt" />
+    <Content Include="Resources\R60 Countryman %282011 -     %29Years.txt" />
+    <Content Include="Resources\R61 Paceman %282013 -     %29Years.txt" />
+    <Content Include="Resources\R8Years.txt" />
+    <Content Include="Resources\Raider PkupYears.txt" />
+    <Content Include="Resources\RainierYears.txt" />
+    <Content Include="Resources\Ram 1500 Pkup %281994- %29Years.txt" />
+    <Content Include="Resources\Ram 2500 Pkup %281994- %29Years.txt" />
+    <Content Include="Resources\Ram 3500 Pkup   chas. cab %281994- %29Years.txt" />
+    <Content Include="Resources\Ram 4500 5500 chas. cabYears.txt" />
+    <Content Include="Resources\Ram 50 D50Years.txt" />
+    <Content Include="Resources\Ram RaiderYears.txt" />
+    <Content Include="Resources\RamblerYears.txt" />
+    <Content Include="Resources\RamchargerYears.txt" />
+    <Content Include="Resources\RampageYears.txt" />
+    <Content Include="Resources\RancheroYears.txt" />
+    <Content Include="Resources\Range Rover EvoqueYears.txt" />
+    <Content Include="Resources\Range Rover SportYears.txt" />
+    <Content Include="Resources\Range RoverYears.txt" />
+    <Content Include="Resources\RangerYears.txt" />
+    <Content Include="Resources\RapideYears.txt" />
+    <Content Include="Resources\RAV4 EVYears.txt" />
+    <Content Include="Resources\RAV4Years.txt" />
+    <Content Include="Resources\RC 350Years.txt" />
+    <Content Include="Resources\RC FYears.txt" />
+    <Content Include="Resources\RDXYears.txt" />
+    <Content Include="Resources\REACH VanYears.txt" />
+    <Content Include="Resources\ReattaYears.txt" />
+    <Content Include="Resources\RebelYears.txt" />
+    <Content Include="Resources\RegalYears.txt" />
+    <Content Include="Resources\RegencyYears.txt" />
+    <Content Include="Resources\RELAYYears.txt" />
+    <Content Include="Resources\ReliantYears.txt" />
+    <Content Include="Resources\RenaultModels.txt" />
+    <Content Include="Resources\RendezvousYears.txt" />
+    <Content Include="Resources\RenegadeYears.txt" />
+    <Content Include="Resources\RenoYears.txt" />
+    <Content Include="Resources\Revent�nYears.txt" />
+    <Content Include="Resources\Rialta by WinnebagoYears.txt" />
+    <Content Include="Resources\RidgelineYears.txt" />
+    <Content Include="Resources\Rio %28incl. Cinco RX-V%29Years.txt" />
+    <Content Include="Resources\RivieraYears.txt" />
+    <Content Include="Resources\RLXYears.txt" />
+    <Content Include="Resources\RLYears.txt" />
+    <Content Include="Resources\RoadmasterYears.txt" />
+    <Content Include="Resources\RoadrunnerYears.txt" />
+    <Content Include="Resources\Roadster Roadster SportYears.txt" />
+    <Content Include="Resources\RoadsterYears.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles %28exc FE-970, FE-971%29Years.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles %28FE-970, FE-971%29Years.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles -8 31 92Years.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles 9 01 92-12 93Years.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles w msYears.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 Axles w PASYears.txt" />
+    <Content Include="Resources\Rockwell %28Meritor%29 AxlesYears.txt" />
+    <Content Include="Resources\Rockwell Meritor Front Drive AxlesYears.txt" />
+    <Content Include="Resources\Rockwell Meritor I-Beam AxlesYears.txt" />
+    <Content Include="Resources\RockyYears.txt" />
+    <Content Include="Resources\Rodeo Rodeo SportYears.txt" />
+    <Content Include="Resources\RogueYears.txt" />
+    <Content Include="Resources\Rolls RoyceModels.txt" />
+    <Content Include="Resources\RondoYears.txt" />
+    <Content Include="Resources\RossionModels.txt" />
+    <Content Include="Resources\Rotary PkupYears.txt" />
+    <Content Include="Resources\RoundupYears.txt" />
+    <Content Include="Resources\RoutanYears.txt" />
+    <Content Include="Resources\Royal MonacoYears.txt" />
+    <Content Include="Resources\RSXYears.txt" />
+    <Content Include="Resources\RTS V-driveYears.txt" />
+    <Content Include="Resources\RTS-04Years.txt" />
+    <Content Include="Resources\RTS-06Years.txt" />
+    <Content Include="Resources\RushYears.txt" />
+    <Content Include="Resources\RX %28300 330 350%29Years.txt" />
+    <Content Include="Resources\RX Hybrid %28400h 450h%29Years.txt" />
+    <Content Include="Resources\RX-2Years.txt" />
+    <Content Include="Resources\RX-3Years.txt" />
+    <Content Include="Resources\RX-4Years.txt" />
+    <Content Include="Resources\RX-7Years.txt" />
+    <Content Include="Resources\RX-8Years.txt" />
+    <Content Include="Resources\RXYears.txt" />
+    <Content Include="Resources\S-TypeYears.txt" />
+    <Content Include="Resources\S1 ser. %281955-58%29Years.txt" />
+    <Content Include="Resources\S10 PkupYears.txt" />
+    <Content Include="Resources\S15 Sonoma PkupYears.txt" />
+    <Content Include="Resources\S2 ser. %281959-61%29Years.txt" />
+    <Content Include="Resources\S2000Years.txt" />
+    <Content Include="Resources\S215 S217 Years.txt" />
+    <Content Include="Resources\S3 ser. %281962-65%29Years.txt" />
+    <Content Include="Resources\S40Years.txt" />
+    <Content Include="Resources\S417Years.txt" />
+    <Content Include="Resources\S600 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\S60Years.txt" />
+    <Content Include="Resources\S70 V70Years.txt" />
+    <Content Include="Resources\S700 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\S80Years.txt" />
+    <Content Include="Resources\S90 V90Years.txt" />
+    <Content Include="Resources\SaabModels.txt" />
+    <Content Include="Resources\SableYears.txt" />
+    <Content Include="Resources\Safari VanYears.txt" />
+    <Content Include="Resources\Safari WagonYears.txt" />
+    <Content Include="Resources\SamaraYears.txt" />
+    <Content Include="Resources\SamuraiYears.txt" />
+    <Content Include="Resources\SandiaYears.txt" />
+    <Content Include="Resources\Santa FeYears.txt" />
+    <Content Include="Resources\SapporoYears.txt" />
+    <Content Include="Resources\SaratogaYears.txt" />
+    <Content Include="Resources\SatelliteYears.txt" />
+    <Content Include="Resources\SaturnModels.txt" />
+    <Content Include="Resources\Savana Van %281996-  %29Years.txt" />
+    <Content Include="Resources\SavoyYears.txt" />
+    <Content Include="Resources\SC %28300 400 430%29Years.txt" />
+    <Content Include="Resources\ScampYears.txt" />
+    <Content Include="Resources\ScaniaModels.txt" />
+    <Content Include="Resources\ScionModels.txt" />
+    <Content Include="Resources\SciroccoYears.txt" />
+    <Content Include="Resources\ScorpioYears.txt" />
+    <Content Include="Resources\ScoupeYears.txt" />
+    <Content Include="Resources\Scout 80 800 %281961-71%29Years.txt" />
+    <Content Include="Resources\Scout II %281971-80 incl. Terra, Traveler, SS2%29Years.txt" />
+    <Content Include="Resources\SebringYears.txt" />
+    <Content Include="Resources\SedonaYears.txt" />
+    <Content Include="Resources\SentraYears.txt" />
+    <Content Include="Resources\SephiaYears.txt" />
+    <Content Include="Resources\SequoiaYears.txt" />
+    <Content Include="Resources\Series 62Years.txt" />
+    <Content Include="Resources\SetraModels.txt" />
+    <Content Include="Resources\Seville STSYears.txt" />
+    <Content Include="Resources\ShadowYears.txt" />
+    <Content Include="Resources\ShellYears.txt" />
+    <Content Include="Resources\SidekickYears.txt" />
+    <Content Include="Resources\SiennaYears.txt" />
+    <Content Include="Resources\SignetYears.txt" />
+    <Content Include="Resources\SilhouetteYears.txt" />
+    <Content Include="Resources\Silver CloudYears.txt" />
+    <Content Include="Resources\Silver DawnYears.txt" />
+    <Content Include="Resources\Silver SeraphYears.txt" />
+    <Content Include="Resources\Silver ShadowYears.txt" />
+    <Content Include="Resources\Silver SpiritYears.txt" />
+    <Content Include="Resources\Silver SpurYears.txt" />
+    <Content Include="Resources\Silver Wraith IIYears.txt" />
+    <Content Include="Resources\SISU AxlesYears.txt" />
+    <Content Include="Resources\SkyhawkYears.txt" />
+    <Content Include="Resources\Skylark %28incl. Gran Sport GS GSX%29Years.txt" />
+    <Content Include="Resources\Skyline %28Japan RYears.txt" />
+    <Content Include="Resources\SkylinerYears.txt" />
+    <Content Include="Resources\SKYYears.txt" />
+    <Content Include="Resources\SL SC SW ser.Years.txt" />
+    <Content Include="Resources\SLXYears.txt" />
+    <Content Include="Resources\SmartModels.txt" />
+    <Content Include="Resources\SolsticeYears.txt" />
+    <Content Include="Resources\SomersetYears.txt" />
+    <Content Include="Resources\Sonata HybridYears.txt" />
+    <Content Include="Resources\SonataYears.txt" />
+    <Content Include="Resources\SonicYears.txt" />
+    <Content Include="Resources\SorentoYears.txt" />
+    <Content Include="Resources\Soul EVYears.txt" />
+    <Content Include="Resources\SoulYears.txt" />
+    <Content Include="Resources\Spark EVYears.txt" />
+    <Content Include="Resources\SparkYears.txt" />
+    <Content Include="Resources\Spartan ChassisModels.txt" />
+    <Content Include="Resources\Spartan ChassisYears.txt" />
+    <Content Include="Resources\Special DeluxeYears.txt" />
+    <Content Include="Resources\SpecialYears.txt" />
+    <Content Include="Resources\Spectra %28incl. Spectra5%29Years.txt" />
+    <Content Include="Resources\SpectrumYears.txt" />
+    <Content Include="Resources\SpiderYears.txt" />
+    <Content Include="Resources\SpiritYears.txt" />
+    <Content Include="Resources\SpitfireYears.txt" />
+    <Content Include="Resources\SportageYears.txt" />
+    <Content Include="Resources\Sports SedanYears.txt" />
+    <Content Include="Resources\SportwagonYears.txt" />
+    <Content Include="Resources\Sprinter %281999-2006%29Years.txt" />
+    <Content Include="Resources\SprinterYears.txt" />
+    <Content Include="Resources\SprintYears.txt" />
+    <Content Include="Resources\SRXYears.txt" />
+    <Content Include="Resources\SSRYears.txt" />
+    <Content Include="Resources\SSYears.txt" />
+    <Content Include="Resources\St. RegisYears.txt" />
+    <Content Include="Resources\StandardYears.txt" />
+    <Content Include="Resources\Stanza Wagon   MultiYears.txt" />
+    <Content Include="Resources\StanzaYears.txt" />
+    <Content Include="Resources\Star ChiefYears.txt" />
+    <Content Include="Resources\StarfireYears.txt" />
+    <Content Include="Resources\StarionYears.txt" />
+    <Content Include="Resources\StarletYears.txt" />
+    <Content Include="Resources\StealthYears.txt" />
+    <Content Include="Resources\StellarYears.txt" />
+    <Content Include="Resources\SterlingModels.txt" />
+    <Content Include="Resources\StormYears.txt" />
+    <Content Include="Resources\StradaYears.txt" />
+    <Content Include="Resources\StratusYears.txt" />
+    <Content Include="Resources\Streamliner Silver Streak TorpedoYears.txt" />
+    <Content Include="Resources\Studebaker AvantiModels.txt" />
+    <Content Include="Resources\Styleline StylemasterYears.txt" />
+    <Content Include="Resources\StylusYears.txt" />
+    <Content Include="Resources\SubaruModels.txt" />
+    <Content Include="Resources\SuburbanYears.txt" />
+    <Content Include="Resources\SummitYears.txt" />
+    <Content Include="Resources\SunbeamModels.txt" />
+    <Content Include="Resources\Sunbird %28J%292000Years.txt" />
+    <Content Include="Resources\SunburstYears.txt" />
+    <Content Include="Resources\SundanceYears.txt" />
+    <Content Include="Resources\SunfireYears.txt" />
+    <Content Include="Resources\SunlinerYears.txt" />
+    <Content Include="Resources\SunrunnerYears.txt" />
+    <Content Include="Resources\Super ChiefYears.txt" />
+    <Content Include="Resources\SuperYears.txt" />
+    <Content Include="Resources\SupraYears.txt" />
+    <Content Include="Resources\SuzukiModels.txt" />
+    <Content Include="Resources\SV-1 %281974-76%29Years.txt" />
+    <Content Include="Resources\SVXYears.txt" />
+    <Content Include="Resources\Swift Swift+Years.txt" />
+    <Content Include="Resources\SX4Years.txt" />
+    <Content Include="Resources\SZYears.txt" />
+    <Content Include="Resources\T ser.Years.txt" />
+    <Content Include="Resources\T1 ser. %281966-76%29Years.txt" />
+    <Content Include="Resources\T100Years.txt" />
+    <Content Include="Resources\T2 ser. %281977-80%29Years.txt" />
+    <Content Include="Resources\T8 Series 40 45 %28R119%29Years.txt" />
+    <Content Include="Resources\T800,T900,T2100,S2100 Coaches 1997-Years.txt" />
+    <Content Include="Resources\Tacoma 4X2 PreRunnerYears.txt" />
+    <Content Include="Resources\Tacoma 4X2Years.txt" />
+    <Content Include="Resources\Tacoma 4X4Years.txt" />
+    <Content Include="Resources\TahoeYears.txt" />
+    <Content Include="Resources\TalonYears.txt" />
+    <Content Include="Resources\Taurus XYears.txt" />
+    <Content Include="Resources\TaurusYears.txt" />
+    <Content Include="Resources\TC by MaseratiYears.txt" />
+    <Content Include="Resources\tCYears.txt" />
+    <Content Include="Resources\TempestYears.txt" />
+    <Content Include="Resources\TempoYears.txt" />
+    <Content Include="Resources\TercelYears.txt" />
+    <Content Include="Resources\TerrainYears.txt" />
+    <Content Include="Resources\TerrazaYears.txt" />
+    <Content Include="Resources\TeslaModels.txt" />
+    <Content Include="Resources\TestarossaYears.txt" />
+    <Content Include="Resources\ThingYears.txt" />
+    <Content Include="Resources\Thomas Built BusesModels.txt" />
+    <Content Include="Resources\ThunderbirdYears.txt" />
+    <Content Include="Resources\TiburonYears.txt" />
+    <Content Include="Resources\Tiger %281964-67%29Years.txt" />
+    <Content Include="Resources\TiguanYears.txt" />
+    <Content Include="Resources\TitanYears.txt" />
+    <Content Include="Resources\TLXYears.txt" />
+    <Content Include="Resources\TLYears.txt" />
+    <Content Include="Resources\TMCModels.txt" />
+    <Content Include="Resources\TopazYears.txt" />
+    <Content Include="Resources\ToronadoYears.txt" />
+    <Content Include="Resources\TorrentYears.txt" />
+    <Content Include="Resources\TouaregYears.txt" />
+    <Content Include="Resources\Town &amp; CountryYears.txt" />
+    <Content Include="Resources\Town CarYears.txt" />
+    <Content Include="Resources\ToyotaModels.txt" />
+    <Content Include="Resources\TR3Years.txt" />
+    <Content Include="Resources\TR4Years.txt" />
+    <Content Include="Resources\TR6Years.txt" />
+    <Content Include="Resources\TR7 TR8Years.txt" />
+    <Content Include="Resources\TracerYears.txt" />
+    <Content Include="Resources\TrackerYears.txt" />
+    <Content Include="Resources\TrailblazerYears.txt" />
+    <Content Include="Resources\TraildusterYears.txt" />
+    <Content Include="Resources\Trans AmYears.txt" />
+    <Content Include="Resources\Trans SportYears.txt" />
+    <Content Include="Resources\TRANSIT BusYears.txt" />
+    <Content Include="Resources\Transit ConnectYears.txt" />
+    <Content Include="Resources\TransitYears.txt" />
+    <Content Include="Resources\TraverseYears.txt" />
+    <Content Include="Resources\TraxYears.txt" />
+    <Content Include="Resources\TrediaYears.txt" />
+    <Content Include="Resources\Tribeca B9 TribecaYears.txt" />
+    <Content Include="Resources\TributeYears.txt" />
+    <Content Include="Resources\TriumphModels.txt" />
+    <Content Include="Resources\Trooper IIYears.txt" />
+    <Content Include="Resources\TrooperYears.txt" />
+    <Content Include="Resources\TSXYears.txt" />
+    <Content Include="Resources\TT QuattroYears.txt" />
+    <Content Include="Resources\TTYears.txt" />
+    <Content Include="Resources\Tucson FCEVYears.txt" />
+    <Content Include="Resources\TucsonYears.txt" />
+    <Content Include="Resources\Tundra 4X2Years.txt" />
+    <Content Include="Resources\Tundra 4X4Years.txt" />
+    <Content Include="Resources\Turbo RYears.txt" />
+    <Content Include="Resources\TurismoYears.txt" />
+    <Content Include="Resources\Turnpike CruiserYears.txt" />
+    <Content Include="Resources\Type 2 %28Transporter Microbus%29Years.txt" />
+    <Content Include="Resources\Type 3 %281500 1600 Fastback Squareback%29Years.txt" />
+    <Content Include="Resources\Type 4 %28411, 412%29Years.txt" />
+    <Content Include="Resources\Type C Conventional FS-65Years.txt" />
+    <Content Include="Resources\Type D Saf-T-LinerYears.txt" />
+    <Content Include="Resources\UD TrucksModels.txt" />
+    <Content Include="Resources\UD1100Years.txt" />
+    <Content Include="Resources\UD1200Years.txt" />
+    <Content Include="Resources\UD1300Years.txt" />
+    <Content Include="Resources\UD1400Years.txt" />
+    <Content Include="Resources\UD1800 UD1800Years.txt" />
+    <Content Include="Resources\UD1800CSYears.txt" />
+    <Content Include="Resources\UD2000Years.txt" />
+    <Content Include="Resources\UD2300Years.txt" />
+    <Content Include="Resources\UD2600Years.txt" />
+    <Content Include="Resources\UD2800Years.txt" />
+    <Content Include="Resources\UD3000 %27SD%27 %27Years.txt" />
+    <Content Include="Resources\UD3000Years.txt" />
+    <Content Include="Resources\UD3300Years.txt" />
+    <Content Include="Resources\UD550T, 600TYears.txt" />
+    <Content Include="Resources\UFO chas.Years.txt" />
+    <Content Include="Resources\Ultra LF L4REYears.txt" />
+    <Content Include="Resources\UMC AeromateModels.txt" />
+    <Content Include="Resources\UnimogModels.txt" />
+    <Content Include="Resources\UplanderYears.txt" />
+    <Content Include="Resources\UrracoYears.txt" />
+    <Content Include="Resources\User Spec Standard ValuesModels.txt" />
+    <Content Include="Resources\V12 Vanquish   VanquishYears.txt" />
+    <Content Include="Resources\V12 Vantage SYears.txt" />
+    <Content Include="Resources\V12 Vantage ZagatoYears.txt" />
+    <Content Include="Resources\V40Years.txt" />
+    <Content Include="Resources\V50Years.txt" />
+    <Content Include="Resources\V60 Cross CountryYears.txt" />
+    <Content Include="Resources\V60Years.txt" />
+    <Content Include="Resources\V8   VantageYears.txt" />
+    <Content Include="Resources\V8 QuattroYears.txt" />
+    <Content Include="Resources\ValiantYears.txt" />
+    <Content Include="Resources\Van Hool CoachesModels.txt" />
+    <Content Include="Resources\Van WagonYears.txt" />
+    <Content Include="Resources\VanagonYears.txt" />
+    <Content Include="Resources\VanYears.txt" />
+    <Content Include="Resources\VegaYears.txt" />
+    <Content Include="Resources\VehiCrossYears.txt" />
+    <Content Include="Resources\VelosterYears.txt" />
+    <Content Include="Resources\VenenoYears.txt" />
+    <Content Include="Resources\VenturaYears.txt" />
+    <Content Include="Resources\VentureYears.txt" />
+    <Content Include="Resources\VenzaYears.txt" />
+    <Content Include="Resources\VeracruzYears.txt" />
+    <Content Include="Resources\VeranoYears.txt" />
+    <Content Include="Resources\VeronaYears.txt" />
+    <Content Include="Resources\Versa %28incl. Note%29Years.txt" />
+    <Content Include="Resources\VersaillesYears.txt" />
+    <Content Include="Resources\Viaggio 1000Years.txt" />
+    <Content Include="Resources\VibeYears.txt" />
+    <Content Include="Resources\VigorYears.txt" />
+    <Content Include="Resources\VillagerYears.txt" />
+    <Content Include="Resources\ViperYears.txt" />
+    <Content Include="Resources\Virage   VolanteYears.txt" />
+    <Content Include="Resources\VisionYears.txt" />
+    <Content Include="Resources\Vista CruiserYears.txt" />
+    <Content Include="Resources\VistaYears.txt" />
+    <Content Include="Resources\VitaraYears.txt" />
+    <Content Include="Resources\VolareYears.txt" />
+    <Content Include="Resources\VolkswagenModels.txt" />
+    <Content Include="Resources\VolkswagenYears.txt" />
+    <Content Include="Resources\VoltYears.txt" />
+    <Content Include="Resources\Volvo   VolvoGM   White[Models.txt" />
+    <Content Include="Resources\VolvoModels.txt" />
+    <Content Include="Resources\Voyager Grand VoyagerYears.txt" />
+    <Content Include="Resources\VoyagerYears.txt" />
+    <Content Include="Resources\VUEYears.txt" />
+    <Content Include="Resources\w 737.220 front axleYears.txt" />
+    <Content Include="Resources\w 737.365 375 570 front axleYears.txt" />
+    <Content Include="Resources\W ser.Years.txt" />
+    <Content Include="Resources\W600 Medium Duty -1981Years.txt" />
+    <Content Include="Resources\Wanderlodge 450 Lxi H4REYears.txt" />
+    <Content Include="Resources\Wanderlodge M380Years.txt" />
+    <Content Include="Resources\Western StarModels.txt" />
+    <Content Include="Resources\WildcatYears.txt" />
+    <Content Include="Resources\WindsorYears.txt" />
+    <Content Include="Resources\WindstarYears.txt" />
+    <Content Include="Resources\Workhorse Custom ChassisModels.txt" />
+    <Content Include="Resources\Workhorse Custom ChassisYears.txt" />
+    <Content Include="Resources\Wraith %28RR5%29Years.txt" />
+    <Content Include="Resources\Wrangler %28incl. Unlimited%29Years.txt" />
+    <Content Include="Resources\X-90Years.txt" />
+    <Content Include="Resources\X-TrailYears.txt" />
+    <Content Include="Resources\X-TypeYears.txt" />
+    <Content Include="Resources\X1        - E84 %282012 - 2015%29Years.txt" />
+    <Content Include="Resources\X1        - F48 %282016 -     %29Years.txt" />
+    <Content Include="Resources\X1 9Years.txt" />
+    <Content Include="Resources\X3       - E83 %282004 - 2010%29Years.txt" />
+    <Content Include="Resources\X3       - F25 %282011 -     %29Years.txt" />
+    <Content Include="Resources\X3 45Years.txt" />
+    <Content Include="Resources\X4       - F26 %282015 -     %29Years.txt" />
+    <Content Include="Resources\X5       - E53 %282000 - 2006%29Years.txt" />
+    <Content Include="Resources\X5       - E70 %282007 - 2013%29Years.txt" />
+    <Content Include="Resources\X5       - F15 %282014 -     %29Years.txt" />
+    <Content Include="Resources\X5M      - F85 %282015 -     %29Years.txt" />
+    <Content Include="Resources\X6       - E71 %282008 - 2014%29Years.txt" />
+    <Content Include="Resources\X6       - F16 %282015 -     %29Years.txt" />
+    <Content Include="Resources\X6 Hybrid - E72 %282010 - 2011%29Years.txt" />
+    <Content Include="Resources\X6M      - F86 %282015 -     %29Years.txt" />
+    <Content Include="Resources\xAYears.txt" />
+    <Content Include="Resources\xBYears.txt" />
+    <Content Include="Resources\XC60Years.txt" />
+    <Content Include="Resources\XC70Years.txt" />
+    <Content Include="Resources\XC90Years.txt" />
+    <Content Include="Resources\Xcel 102 C4REYears.txt" />
+    <Content Include="Resources\XDE35, XDE40, XT40EBYears.txt" />
+    <Content Include="Resources\xDYears.txt" />
+    <Content Include="Resources\XEYears.txt" />
+    <Content Include="Resources\XF XFRYears.txt" />
+    <Content Include="Resources\XG300 XG350Years.txt" />
+    <Content Include="Resources\XJ XJRYears.txt" />
+    <Content Include="Resources\XJRSYears.txt" />
+    <Content Include="Resources\XJSYears.txt" />
+    <Content Include="Resources\XK XKR %281997-2015%29Years.txt" />
+    <Content Include="Resources\XK150Years.txt" />
+    <Content Include="Resources\XKEYears.txt" />
+    <Content Include="Resources\XL IIYears.txt" />
+    <Content Include="Resources\XL-7   Grand Vitara XL-7Years.txt" />
+    <Content Include="Resources\XLR XLR-VYears.txt" />
+    <Content Include="Resources\XLYears.txt" />
+    <Content Include="Resources\XR4TiYears.txt" />
+    <Content Include="Resources\XterraYears.txt" />
+    <Content Include="Resources\XTSYears.txt" />
+    <Content Include="Resources\XTYears.txt" />
+    <Content Include="Resources\XV Crosstrek HybridYears.txt" />
+    <Content Include="Resources\XV CrosstrekYears.txt" />
+    <Content Include="Resources\YarisYears.txt" />
+    <Content Include="Resources\Years.txt" />
+    <Content Include="Resources\YugoModels.txt" />
+    <Content Include="Resources\Yukon DenaliYears.txt" />
+    <Content Include="Resources\Yukon XL DenaliYears.txt" />
+    <Content Include="Resources\Yukon XLYears.txt" />
+    <Content Include="Resources\YukonYears.txt" />
+    <Content Include="Resources\YumaYears.txt" />
+    <Content Include="Resources\Z1       - E30 %281988 - 1991%29Years.txt" />
+    <Content Include="Resources\Z3       - E36 %281996 - 2002%29Years.txt" />
+    <Content Include="Resources\Z4       - E85 E86 %282003 - 2008%29Years.txt" />
+    <Content Include="Resources\Z4       - E89 %282009 -     %29Years.txt" />
+    <Content Include="Resources\Z8       - E52 %282000 - 2003%29Years.txt" />
+    <Content Include="Resources\ZDXYears.txt" />
+    <Content Include="Resources\ZephyrYears.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario1_Make_Alphabetical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario2_Model_Alphabetical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario4_Selection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario3_Year.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario2_Model.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario1_Make.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario3_Year_Alphabetical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

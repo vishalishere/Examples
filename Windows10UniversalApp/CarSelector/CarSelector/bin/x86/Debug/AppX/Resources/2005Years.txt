@@ -1,0 +1,4 @@
+145 165 185 (NA6J, NB6J, NC6J) w MFS-6 axle
+238 268 (ND8J, NE8J) w MFS-8 axle
+308 (NF8J) w MFS-10 axle
+338 (NV8J) w MFS-12 axle

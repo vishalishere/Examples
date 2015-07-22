@@ -1,0 +1,6 @@
+w 225 65R17 tyre
+w 225 60R18 tyre
+w 235 55R18 tyre
+w 225 65R17 tyre
+w 225 60R18 tyre
+w 235 55R18 tyre

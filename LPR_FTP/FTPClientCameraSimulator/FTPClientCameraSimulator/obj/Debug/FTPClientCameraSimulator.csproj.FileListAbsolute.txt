@@ -1,0 +1,6 @@
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\bin\Debug\FTPClientCameraSimulator.exe.config
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\bin\Debug\FTPClientCameraSimulator.exe
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\bin\Debug\FTPClientCameraSimulator.pdb
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\obj\Debug\FTPClientCameraSimulator.csprojResolveAssemblyReference.cache
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\obj\Debug\FTPClientCameraSimulator.exe
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPClientCameraSimulator\FTPClientCameraSimulator\obj\Debug\FTPClientCameraSimulator.pdb

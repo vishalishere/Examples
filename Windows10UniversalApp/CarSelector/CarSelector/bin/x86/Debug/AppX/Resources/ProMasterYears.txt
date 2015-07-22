@@ -1,0 +1,19 @@
+1500 118" wb (8550 GVWR)
+1500 118" wb (8550 GVWR)
+1500 136" wb (8550 GVWR)
+1500 136" wb (8550 GVWR)
+2500 136" wb (8900 GVWR)
+2500 136" wb (8900 GVWR)
+2500 159" wb (8900 GVWR)
+2500 159" wb (8900 GVWR)
+2500 159" wb (8900 GVWR)
+2500 159" wb (8900 GVWR)
+3500 Cargo Van 159" wb (9350 GVWR)
+3500 Cargo Van 159" wb (9350 GVWR)
+3500 Cargo Van 159" wb (9350 GVWR) Extended Body
+3500 Cargo Van 159" wb (9350 GVWR) Extended Body
+3500 Window Van 159" wb (9350 GVWR)
+3500 Window Van 159" wb (9350 GVWR)
+3500 chas. cab
+3500 chas. cab Cutaway 136" wb (9350 GVWR)
+3500 chas. cab Cutaway 159" wb (9350 GVWR)

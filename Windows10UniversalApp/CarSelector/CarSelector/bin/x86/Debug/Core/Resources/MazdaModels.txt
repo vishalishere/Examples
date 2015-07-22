@@ -1,0 +1,33 @@
+Mazda2
+Mazda3
+Mazda5
+Mazda6
+323
+616
+618
+626
+808
+818
+929
+B ser. Pkup Truck
+CX-3
+CX-5
+CX-7
+CX-9
+Cosmo
+GLC
+MX-3
+MX-5 Miata
+MX-6
+Millenia
+MPV
+Navajo
+Protege
+Protege5
+Rotary Pkup
+RX-2
+RX-3
+RX-4
+RX-7
+RX-8
+Tribute

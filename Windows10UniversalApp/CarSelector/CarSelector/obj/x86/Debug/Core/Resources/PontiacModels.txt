@@ -1,0 +1,43 @@
+(T)1000
+6000
+Acadian
+Asuna Sunfire
+Astre
+Aztek
+Beaumont
+Bonneville
+Catalina
+Chieftain
+Fiero
+Firebird
+Firefly
+G1
+G3   Wave
+G4
+G5 (incl. Pursuit G5 Pursuit)
+G6
+G8
+Grand Am
+Grand Prix
+Grandville
+Laurentian
+LeMans
+Matiz (G2)
+Montana (incl. SV6)
+Parisienne
+Phoenix
+Safari Wagon
+Solstice
+Star Chief
+Streamliner Silver Streak Torpedo
+Sunbird (J)2000
+Sunburst
+Sunfire
+Sunrunner
+Super Chief
+Tempest
+Torrent
+Trans Am
+Trans Sport
+Ventura
+Vibe

@@ -1,0 +1,32 @@
+A3
+A3 S3 Quattro
+A4
+A4 S4 RS 4 Quattro
+A5
+A5 S5 RS 5 Quattro
+A6
+A6 S6 RS 6 Quattro
+A7 S7 RS 7 Quattro
+A8 S8
+allroad Quattro
+Q3
+Q3 RS Q3 Quattro
+Q5 SQ5 Quattro
+Q7
+R8
+TT
+TT Quattro
+80 90
+80 90 Quattro
+100 200
+100 200 Quattro, S4 (1989-94)
+4000
+4000 Quattro
+5000
+5000 Quattro
+Cabriolet-
+Coupe (incl. GT)
+Coupe Quattro
+Fox
+Quattro
+V8 Quattro

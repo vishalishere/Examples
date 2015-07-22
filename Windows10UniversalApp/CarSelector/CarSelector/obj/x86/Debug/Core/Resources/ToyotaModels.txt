@@ -1,0 +1,44 @@
+4Runner
+Avalon
+Avalon Hybrid
+Avanza
+Camry
+Camry Hybrid
+Camry Solara
+Carina
+Celica
+Corolla
+Corona
+Cressida
+Crown
+Echo
+FJ Cruiser
+Highlander
+Highlander Hybrid
+Land Cruiser
+MR2   MR2 Spyder
+Mark II
+Matrix
+Paseo
+Pkup Hi-Lux (1969-95 exc T100, Tacoma)
+Previa
+Prius
+Prius PHV (Plug-in Hybrid Vehicle)
+Prius c
+Prius v
+RAV4
+RAV4 EV
+Rush
+Sequoia
+Sienna
+Starlet
+Supra
+T100
+Tacoma 4X2
+Tacoma 4X2 PreRunner
+Tacoma 4X4
+Tercel
+Tundra 4X2
+Tundra 4X4
+Venza
+Yaris

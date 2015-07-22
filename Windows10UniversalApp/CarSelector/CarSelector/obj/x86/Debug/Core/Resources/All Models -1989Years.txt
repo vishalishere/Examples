@@ -1,0 +1,33 @@
+B6 School Bus 1982-89
+C5,C6,C7 Conventional Cab 1982-89
+P4,P6 Motorhome chas. 1982-89
+P6 Standard chas. 1982-89
+B6 School Bus 1982-89
+C5,C6,C7 Conventional Cab 1982-89
+P4,P6 Motorhome chas. 1982-89
+P6 Standard chas. 1982-89
+HD 1 1 85-
+HD Aluminum Conventional Cab "N-9" 1984-85
+HD Aluminum Conventional Cab 1982-83
+HD Aluminum Tilt Cab "D9" 1984-85
+HD Steel Conventional Cab "J8-9" 1984-85
+HD Steel Conventional Cab 1982-83
+HD w Sheppard Integral Steering 1984-85
+MD B6 School Bus 1982-89
+MD C5,C6,C7 Conventional Cab 1982-89
+MD P4,P6 Motorhome chas. 1982-89
+MD P6 Standard chas. 1982-89
+HD Aluminum Conventional Cab 1982-83
+HD Steel Conventional Cab 1982-83
+HD 1 1 85-
+HD Aluminum Conventional Cab "N-9" 1984-85
+HD Aluminum Conventional Cab 1982-83
+HD Aluminum Tilt Cab "D9" 1984-85
+HD Steel Conventional Cab "J8-9" 1984-85
+HD Steel Conventional Cab 1982-83
+HD w Sheppard Integral Steering 1984-85
+HD 1 1 85-
+HD Aluminum Conventional Cab "N-9" 1984-85
+HD Aluminum Tilt Cab "D9" 1984-85
+HD Steel Conventional Cab "J8-9" 1984-85
+HD w Sheppard Integral Steering 1984-85

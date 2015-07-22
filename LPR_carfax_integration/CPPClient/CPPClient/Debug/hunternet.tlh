@@ -1,0 +1,261 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 12.00.21005.1 (2de7200d).
+//
+// c:\users\skitchen\documents\tfs\he\sandbox\coop\lpr_carfax_integration\cppclient\cppclient\debug\hunternet.tlh
+//
+// C++ source equivalent of Win32 type library HunterNet.tlb
+// compiler-generated file created 05/21/15 at 08:29:54 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace HunterNet {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0a2d43c9-da5e-4a59-8006-ff131b33d86c"))
+/* LIBID */ __HunterNet;
+enum ConnectionStatus;
+struct __declspec(uuid("d1095e21-8dca-42ab-bc96-26ebcb07b1ab"))
+/* dual interface */ IConnectionUtilities;
+struct /* coclass */ ConnectionUtilities;
+struct __declspec(uuid("918c354d-2925-4c2e-a0cc-11bdd0b39b31"))
+/* dual interface */ IDataDump;
+struct /* coclass */ DataDump;
+struct __declspec(uuid("77a30fe1-7cf9-4294-9a5e-75f553838d41"))
+/* dual interface */ ILPRutilities;
+struct /* coclass */ LPRutilities;
+struct __declspec(uuid("52714291-fcd3-46e9-b503-8e613cb18b7a"))
+/* dual interface */ IVinResult;
+struct /* coclass */ VinResult;
+struct __declspec(uuid("01b7be56-0617-4e1c-9162-8b72276aa7c6"))
+/* dual interface */ IVinCheck;
+struct /* coclass */ VinCheck;
+struct __declspec(uuid("446e3350-1e2c-3a54-8c55-93b38e1121d4"))
+/* dual interface */ _ConnectionUtilities;
+struct __declspec(uuid("4183b996-0c23-336a-b276-540fc007faab"))
+/* dual interface */ _VinCheck;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IConnectionUtilities, __uuidof(IConnectionUtilities));
+_COM_SMARTPTR_TYPEDEF(IDataDump, __uuidof(IDataDump));
+_COM_SMARTPTR_TYPEDEF(ILPRutilities, __uuidof(ILPRutilities));
+_COM_SMARTPTR_TYPEDEF(IVinResult, __uuidof(IVinResult));
+_COM_SMARTPTR_TYPEDEF(IVinCheck, __uuidof(IVinCheck));
+_COM_SMARTPTR_TYPEDEF(_ConnectionUtilities, __uuidof(_ConnectionUtilities));
+_COM_SMARTPTR_TYPEDEF(_VinCheck, __uuidof(_VinCheck));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("511a19f4-7ea2-4e4c-b8ff-8eee7c690565"))
+ConnectionStatus
+{
+    ConnectionStatus_Unknown = 0,
+    ConnectionStatus_Complete = 1,
+    ConnectionStatus_Timeout = 2,
+    ConnectionStatus_ConnectionError = 3,
+    ConnectionStatus_UserNamePasswordValid = 4,
+    ConnectionStatus_UserNamePasswordInvalid = 5,
+    ConnectionStatus_UserNamePasswordExpired = 6
+};
+
+struct __declspec(uuid("d1095e21-8dca-42ab-bc96-26ebcb07b1ab"))
+IConnectionUtilities : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ValidateUsernamePassword (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ enum ConnectionStatus * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetAuthToken (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetAuthTokenNoEscape (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("9d8f3c0a-62c7-4615-9d30-24bbbc1eed19"))
+ConnectionUtilities;
+    // [ default ] interface _ConnectionUtilities
+    // interface _Object
+    // interface IConnectionUtilities
+
+struct __declspec(uuid("918c354d-2925-4c2e-a0cc-11bdd0b39b31"))
+IDataDump : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RunProcedureDataDump (
+        /*[in]*/ GUID currentEventid,
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall RunDailyDataDump (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall UploadDataDump (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall PreformDailyDataDump (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall AddFileWithDirectory (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ BSTR srcFile,
+        /*[in]*/ BSTR directory ) = 0;
+      virtual HRESULT __stdcall AddFile (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ BSTR srcFile ) = 0;
+      virtual HRESULT __stdcall AddDirectory (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ BSTR srcDirectory,
+        /*[in]*/ BSTR directoryName,
+        /*[in]*/ VARIANT_BOOL recursive ) = 0;
+      virtual HRESULT __stdcall AddDirectoryDeleteSrc (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ BSTR srcDirectory,
+        /*[in]*/ BSTR directoryName,
+        /*[in]*/ VARIANT_BOOL recursive,
+        /*[in]*/ VARIANT_BOOL deleteSrc ) = 0;
+      virtual HRESULT __stdcall GetDataDumpDirectory (
+        /*[in]*/ GUID eventid,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall StartEngine ( ) = 0;
+      virtual HRESULT __stdcall AddVideoFiles (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ DATE startDate,
+        /*[in]*/ DATE endDate ) = 0;
+      virtual HRESULT __stdcall AddVideoFilesFromNow (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ DATE startDate ) = 0;
+      virtual HRESULT __stdcall AddVideoFilesNoStart (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ DATE startDate,
+        /*[in]*/ DATE endDate ) = 0;
+      virtual HRESULT __stdcall AddVideoFilesFromNowNoStart (
+        /*[in]*/ GUID eventid,
+        /*[in]*/ DATE startDate ) = 0;
+      virtual HRESULT __stdcall CanDataDumpRun (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall SendSingleBatchFile (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[in]*/ BSTR filePath,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("073ab17b-e4ef-4d0d-ad59-ba476831ba40"))
+DataDump;
+    // interface _Object
+    // [ default ] interface IDataDump
+
+struct __declspec(uuid("77a30fe1-7cf9-4294-9a5e-75f553838d41"))
+ILPRutilities : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LprVinLookup (
+        /*[in]*/ BSTR plate,
+        /*[in]*/ BSTR state,
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("47c15a34-fa35-40ee-95bb-a8b84e5c2f0b"))
+LPRutilities;
+    // interface _Object
+    // [ default ] interface ILPRutilities
+
+struct __declspec(uuid("52714291-fcd3-46e9-b503-8e613cb18b7a"))
+IVinResult : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Idnum (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_Idnum (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_Mfg (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_Mfg (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_Model (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_Model (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ long pRetVal ) = 0;
+};
+
+struct __declspec(uuid("e74ae29b-3349-42a1-ba9d-ffc00479d376"))
+VinResult;
+    // interface _Object
+    // [ default ] interface IVinResult
+
+struct __declspec(uuid("01b7be56-0617-4e1c-9162-8b72276aa7c6"))
+IVinCheck : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LoadDetails (
+        /*[in]*/ BSTR vin,
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out,retval]*/ enum ConnectionStatus * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetNumberOfResults (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetResultAt (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IVinResult * * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetNumberOfAttribs (
+        /*[in]*/ long index,
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetAttribsAt (
+        /*[in]*/ long resultIndex,
+        /*[in]*/ long attribIndex,
+        /*[out,retval]*/ long * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("d28dc817-ec53-4065-bfc9-dbcbb124a775"))
+VinCheck;
+    // [ default ] interface _VinCheck
+    // interface _Object
+    // interface IVinCheck
+
+struct __declspec(uuid("446e3350-1e2c-3a54-8c55-93b38e1121d4"))
+_ConnectionUtilities : IDispatch
+{};
+
+struct __declspec(uuid("4183b996-0c23-336a-b276-540fc007faab"))
+_VinCheck : IDispatch
+{};
+
+} // namespace HunterNet
+
+#pragma pack(pop)

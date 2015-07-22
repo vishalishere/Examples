@@ -1,0 +1,9 @@
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\SharpFtpServer.exe.config
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\obj\x86\Debug\SharpFtpServer.csprojResolveAssemblyReference.cache
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\SharpFtpServer.log4net
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\SharpFtpServer.exe
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\SharpFtpServer.pdb
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\log4net.dll
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\bin\Debug\log4net.xml
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\obj\x86\Debug\SharpFtpServer.exe
+C:\Users\skitchen\Documents\TFS\SandBox\Coop\LPR_FTP\FTPWorks\SharpFtpServer\obj\x86\Debug\SharpFtpServer.pdb
